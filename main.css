@@ -21,6 +21,7 @@ body {
 }
 #header > div > a {
   text-decoration: none;
+  color: black;
 }
 #header > div:nth-of-type(1) {
   position: absolute;
@@ -70,7 +71,7 @@ body {
   color: white;
 }
 
-#main > div:nth-of-type(1) {
+#main-index > div:nth-of-type(1) {
   position: absolute;
   width: 376px;
   height: 96px;
@@ -82,7 +83,7 @@ body {
   line-height: 48px;
   color: black;
 }
-#main > div:nth-of-type(2) {
+#main-index > div:nth-of-type(2) {
   position: absolute;
   width: 293px;
   height: 19px;
@@ -95,7 +96,7 @@ body {
 
   color: #626262;
 }
-#main > div:nth-of-type(3) {
+#main-index > div:nth-of-type(3) {
   position: absolute;
   width: 300px;
   height: 300px;
@@ -105,14 +106,14 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100%;
 }
-#main > div:nth-of-type(3) > img {
+#main-index > div:nth-of-type(3) > img {
   position: absolute;
   width: 269px;
   height: 56px;
   left: 16.27px;
   top: 121.76px;
 }
-#main > div:nth-of-type(4) {
+#main-index > div:nth-of-type(4) {
   position: absolute;
   width: 300px;
   height: 300px;
@@ -122,14 +123,14 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100%;
 }
-#main > div:nth-of-type(4) > img {
+#main-index > div:nth-of-type(4) > img {
   position: absolute;
   width: 229px;
   height: 71px;
   left: 39px;
   top: 107px;
 }
-#main > p:nth-of-type(1) {
+#main-index > p:nth-of-type(1) {
   position: absolute;
   width: 184px;
   height: 29px;
@@ -140,7 +141,7 @@ body {
   font-size: 24px;
   line-height: 29px;
 }
-#main > p:nth-of-type(2) {
+#main-index > p:nth-of-type(2) {
   position: absolute;
   width: 351px;
   height: 72px;
@@ -151,7 +152,7 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
-#main > div:nth-of-type(5) {
+#main-index > div:nth-of-type(5) {
   position: absolute;
   width: 185px;
   height: 58px;
@@ -160,7 +161,8 @@ body {
   background-color: #000000;
   border-radius: 50px;
 }
-#main > div:nth-of-type(5) > button {
+#main-index > div:nth-of-type(5) > button,
+#main-sikasem>div:nth-of-type(4)>button {
   width: 100%;
   border-radius: 50px;
   height: 100%;
@@ -168,24 +170,76 @@ body {
   color: white;
 }
 
-#main > div:nth-of-type(6) {
+#main-index > div:nth-of-type(6) {
   position: absolute;
   width: 475px;
   height: 360px;
   left: 510px;
   top: 707px;
 }
-#main > div:nth-of-type(7) {
+#main-index > div:nth-of-type(7) {
   position: absolute;
   width: 213px;
   height: 158px;
   left: 970px;
   top: 808px;
 }
-#main > div:nth-of-type(8) {
+#main-index > div:nth-of-type(8) {
   position: absolute;
   width: 71px;
   height: 149px;
   left: 1223px;
   top: 812px;
+}
+#main-sikasem > div:nth-of-type(1) {
+  position: absolute;
+  width: 321px;
+  height: 77px;
+  left: 286px;
+  top: 285px;
+  display: flex;
+  align-items:  center;
+}
+
+#main-sikasem > div:nth-of-type(2) {
+  position: absolute;
+  width: 508px;
+  height: 58px;
+  left: 607px;
+  top: 294px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: black;
+}
+#main-sikasem > div:nth-of-type(3) {
+  position: absolute;
+  width: 830px;
+  height: 58px;
+  left: 305px;
+  top: 415px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #626262;
+}
+#main-sikasem > div:nth-of-type(4) {
+  position: absolute;
+  width: 185px;
+  height: 58px;
+  left: 529px;
+  top: 567px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 50px;
 }
