@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Landing Page</title>
 </head>
@@ -16,7 +16,7 @@
     <div id="mainbody">
         <div id="header">
             <div><img src="images/PersolLogo.svg" alt="persol logo"></div>
-            <div><a href="#">Overview</a></div>
+            <div><a href="index.html" style="color: #185375;">Overview</a></div>
             <div><a href="#">Support</a></div>
             <div><a href="#">Products</a></div>
             <div><a href="#">Contact</a></div>
@@ -33,7 +33,7 @@
                 Grow your business the personax way
             </div>
             <div>
-                <img src="images/SikasemLogo.svg" alt="sikasem logo">
+                <img src="images/SikasemLogo.svg" alt="sikasem logo" onclick="location.href='sikasem.html'" >
             </div>
             <div>
                 <img src="images/PersonaxLogo.svg" alt="personax logo">
@@ -41,10 +41,13 @@
 
 
 
-            <p>Sikasem Bundle</p>
-            <p>End-to-end, fully customizable <br>
+            <section>
+                <div style="margin-right: 3px; font-weight:  900; color: #185375;">SIKASEM&nbsp;</div>
+                <div style="font-size: 20px;">Bundle</div>
+            </section>
+            <section>End-to-end, fully customizable <br>
                 Accounting and Payroll solution <br>
-                for small businesses and enterprises</p>
+                for small businesses and enterprises</section>
             <div><button onclick="location.href='login.html'"> Get Started > </button></div>
 
             <div><img src="images/laptop.svg" alt="laptop"></div>
@@ -53,29 +56,31 @@
             </section>
         </div>
 
-        <!--
-        <div id="footer">
-            <div class="columns">
-                <p>Get Our Mobile App</p>
-                <div><img src="images/googleplay.png" alt="google play"></div>
-            </div>
-            <div class="columns">
-                <div>About</div>
-                <div>Overview</div>
-                <div>Sikasem</div>
-            </div>
-            <div class="columns">
-                <div>Account</div>
-                <div>Terms & Conditions</div>
-                <div>Projects</div>
-            </div>
-            <div class="columns">
-                <p>Powered-By</p>
-                <div><img src="images/PersolLogo.svg" alt="persol logo"></div>
-                <p>Persol Systems Limited 2022 All rights reserved.</p>
-            </div>
 
-        </div>-->
+        <footer>
+            <div id="footer">
+                <div class="columns">
+                    <p>Get Our Mobile App</p>
+                    <div><img src="images/googleplay.svg" alt="google play" width="55"></div>
+                </div>
+                <div class="columns">
+                    <div>About</div>
+                    <div>Overview</div>
+                    <div>Sikasem</div>
+                </div>
+                <div class="columns">
+                    <div>Account</div>
+                    <div>Terms & Conditions</div>
+                    <div>Projects</div>
+                </div>
+                <div class="columns">
+                    <p>Powered-By</p>
+                    <div><img src="images/PersolLogo.svg" alt="persol logo"></div>
+                    <p>Persol Systems Limited 2022 All rights reserved.</p>
+                </div>
+
+            </div>
+        </footer>
     </div>
 </body>
 
