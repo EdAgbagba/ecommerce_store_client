@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,60 +8,71 @@
     <title>Document</title>
     <link rel="stylesheet" href="account.css">
 </head>
+
 <body>
-  <div class="row">
-    <div class="col-3 first">
-      <h2 class="logo1"></h2>
-    </div>
-    <div class="col-6">
-      <h1>Create New Account</h1>
-      <form>
-        <div class="user-details">
-            
-                <div class="input-box">
-                    <label class="details">First Name  </label><br>
-                    <input type="text" placeholder="Enter first name" name="First Name"><br>
-                </div>
-                <div class="input-box">
-                    <label  class="details name">Last Name </label><br>
-                    <input type="text" placeholder="Enter last name" name="Last Name">
-                </div>
-            <div class="input-box">
-                <label  class="details">Business Name </label><br>
-                <input type="text" placeholder="Enter account name" name="Business name">
-            </div>
-            <div class="input-box">
-                <label  class="details">Phone </label><br>
-                <input type="tel" placeholder="Enter phone number" name="Phone Number">
-            </div>
-            <div class="input-box">
-            <label  class="details email" >Email address </label><br>
-            <input type="email" placeholder="Email name" name="Email address"><br>
-            </div>
-            <div class="input-box">
-                <label  class="details">Password </label><br>
-                <input type="password" name="Password">
-            </div>
-            <div class="input-box">
-                <label  class="details">Confirm Password </label><br>
-                <input type="password"  name="Confirm Password">  
-            </div> 
+    <div class="row">
+        <div class="col-3 first">
+            <h2 class="logo1"></h2>
         </div>
-     
-     <p><strong>Kindly </strong><span><i>click to read the binding terms and conditions</i></span></p>
-     <p class="conditions"><input type="checkbox" >I have read and agree to the terms and conditions.</p>
-     <div><button onclick="createAccount()" href="login.html">  Create Account</button></div>
-     <p class="already">Already have an account?<a href="login.html"> <span>Click  to login</span></a></p>
-        
-    </form>
-  
-   </div>
-   <div class="col-3 second">
-      <h2 class="logo2"></h2>
-   </div>
-    
-  </div>
+        <div class="col-6">
+            <h1>Create New Account</h1>
+            <form>
+                <div>
+
+
+                    <div class="user-details">
+                        <div class="input-box">
+                            <label class="details">First Name </label><br>
+                            <input type="text" placeholder="Enter first name" name="First Name"><br>
+                        </div>
+                        <div class="input-box">
+                            <label class="details name">Last Name </label><br>
+                            <input type="text" placeholder="Enter last name" name="Last Name">
+                        </div>
+                        <div class="input-box">
+                            <label class="details">Business Name </label><br>
+                            <input type="text" placeholder="Enter account name" name="Business name">
+                        </div>
+                        <div class="input-box">
+                            <label class="details">Phone </label><br>
+                            <input type="tel" placeholder="Enter phone number" name="Phone Number">
+                        </div>
+                    </div>
+
+                    <div class="email-details">
+                        <div class="input-box">
+                            <label class="details email">Email address </label><br>
+                            <input type="email" placeholder="Email name" name="Email address"><br>
+                        </div>
+                    </div>
+
+                    <div class="user-details">
+                        <div class="input-box">
+                            <label class="details">Password </label><br>
+                            <input type="password" name="Password">
+                        </div>
+                        <div class="input-box">
+                            <label class="details">Confirm Password </label><br>
+                            <input type="password" name="Confirm Password">
+                        </div>
+                    </div>
+
+                </div>
+
+              
+                <p><strong>Kindly </strong><span><i>click to read the binding terms and conditions</i></span></p>
+                <p class="conditions"><input type="checkbox">I have read and agree to the terms and conditions.</p>
+                <div><button onclick="createAccount()" href="login.html"> Create Account</button></div>
+                <p class="already">Already have an account?<a href="login.html"> <span>Click to login</span></a></p>
+
+            </form>
+
+        </div>
+        <div class="col-3 second">
+            <h2 class="logo2"></h2>
+        </div>
+
+    </div>
 </body>
+
 </html>
-
-
