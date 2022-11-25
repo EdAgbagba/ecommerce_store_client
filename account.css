@@ -62,10 +62,26 @@ input[type="text"],[type="email"], [type="tel"]{
     line-height: 22px;
     color: #838383;
     padding-left: 20px;
-
-
-
 }
+
+input[type="password"]{
+    width: 350px;
+    height: 50px;
+    margin: 15px 0px;
+    border: 1px solid #C5C5C5;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #838383;
+    padding-left: 20px;
+    background-image:url(images/Vector.png), url(images/Line\ 5\ \(1\).png) ;
+    background-repeat: no-repeat, no-repeat ;
+    background-position: 310px, 300px ; 
+}
+
 
 
 .logo1{
@@ -103,9 +119,13 @@ input[type="text"],[type="email"], [type="tel"]{
 
 .user-details{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
     gap: 10px;
 }
+
+ /* .email{
+    grid-column: 1 / 3;  
+} */
 
 
 .details{
@@ -159,9 +179,7 @@ button{
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    float: right;
-    margin: 70px;
-
+    margin: 70px 70px 70px 500px;
 
 }
 
