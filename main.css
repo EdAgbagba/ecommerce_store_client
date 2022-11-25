@@ -63,13 +63,16 @@ body {
   top: 31px;
   background: #000000;
   border-radius: 50px;
+  cursor: pointer;
+  width: 156px;
 }
 #header > div:nth-of-type(7) > button {
-  width: 156px;
+  width: 100%;
   height: 100%;
   background: #000000;
   border-radius: 50px;
   color: white;
+  cursor: pointer;
 }
 #main-index > div:nth-of-type(1) {
   position: absolute;
@@ -116,7 +119,7 @@ body {
 }
 #main-index > div:nth-of-type(3):hover,
 #main-index > div:nth-of-type(4):hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(125, 125, 125, 0.19);
 }
 #main-index > div:nth-of-type(4) {
   position: absolute;
