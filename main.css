@@ -160,6 +160,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+
 }
 #main-index > div:nth-of-type(5) {
   position: absolute;
@@ -169,6 +170,7 @@ body {
   top: 929px;
   background-color: #000000;
   border-radius: 50px;
+  cursor: pointer;
 }
 #main-index > div:nth-of-type(5) > button,
 #main-sikasem > div:nth-of-type(4) > button {
@@ -177,6 +179,7 @@ body {
   height: 100%;
   background-color: #000000;
   color: white;
+  cursor: pointer;
 }
 
 #main-index > div:nth-of-type(6) {
@@ -192,6 +195,7 @@ body {
   height: 158px;
   left: 970px;
   top: 808px;
+  
 }
 #main-index > div:nth-of-type(8) {
   position: absolute;
@@ -199,35 +203,6 @@ body {
   height: 149px;
   left: 1223px;
   top: 812px;
-}
-footer {
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  top: 1070px;
-  background-color: #185375;
-  bottom: 0px;
-
-}
-#footer {
-  position: absolute;
-  left: 142px;
-  right: 289px;
-  display: flex;
-}
-.columns{
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  font-size: 20px;
-  color: white;
-  padding: 50px 0 0 0;
-  height: min-content;
-}
-.columns:nth-of-type(1)>*{
-  width: 100%;
-  text-align: left;
-  padding:;
 }
 
 #main-sikasem > div:nth-of-type(1) {
@@ -405,4 +380,41 @@ footer {
   height: 200px;
   left: 933px;
   top: 841px;
+}
+footer {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 1070px;
+  background-color: #185375;
+  bottom: 0px;
+
+}
+#footer {
+  position: absolute;
+  left: 142px;
+  right: 289px;
+  display: flex;
+}
+.columns{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  font-size: 20px;
+  color: white;
+  padding: 70px 0 0 0;
+  height: min-content;
+}
+
+.columns>*{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.columns:nth-of-type(1)>*{
+  margin: 0px;
+}
+.columns:nth-of-type(4)>div>img{
+  background-color: white;
+  width:min-content;
 }
