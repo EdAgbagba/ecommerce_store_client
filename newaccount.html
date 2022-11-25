@@ -15,73 +15,52 @@
     <div class="col-6">
       <h1>Create New Account</h1>
       <form>
-        <section>
-        <div class="line1">
-            <label>First Name * </label><br>
-            <input type="text" placeholder="Enter first name" name="First Name"><br>
+        <div class="user-details">
+            
+                <div class="input-box">
+                    <label class="details">First Name  </label><br>
+                    <input type="text" placeholder="Enter first name" name="First Name"><br>
+                </div>
+                <div class="input-box">
+                    <label  class="details name">Last Name </label><br>
+                    <input type="text" placeholder="Enter last name" name="Last Name">
+                </div>
+            <div class="input-box">
+                <label  class="details">Business Name </label><br>
+                <input type="text" placeholder="Enter account name" name="Business name">
+            </div>
+            <div class="input-box">
+                <label  class="details">Phone </label><br>
+                <input type="tel" placeholder="Enter phone number" name="Phone Number">
+            </div>
+            <div class="input-box">
+            <label  class="details"  id="email">Email address </label><br>
+            <input type="email" placeholder="Email name" name="Email address"><br>
+            </div>
+            <div class="input-box">
+                <label  class="details">Password </label><br>
+                <input type="text" name="Password">
+            </div>
+            <div class="input-box">
+                <label  class="details">Confirm Password </label><br>
+                <input type="text"  name="Confirm Password">  
+            </div> 
         </div>
-        <div class="line1">
-            <label>Last Name *</label><br>
-            <input type="text" placeholder="Enter last name" name="Last Name">
-        </div>
-        </section>
-        <div class="line1">
-            <label>Business Name *</label><br>
-            <input type="text" placeholder="Enter account name" name="Business name">
-        </div>
-        <div class="line1">
-            <label>Phone *</label><br>
-            <input type="tel" placeholder="Enter phone number" name="Phone Number">
-        </div>
-        <div class="line1">
-        <label>Email address *</label><br>
-        <input type="email" placeholder="Email name" name="Email address"><br>
-        </div>
-        <div class="line1">
-            <label>Password *</label><br>
-            <input type="text" name="Password">
-        </div>
-        <div class="line1">
-            <label>Confirm Password *</label><br>
-            <input type="text"  name="Confirm Password">  
-        </div> 
+     
+     <p><strong>Kindly </strong><i><span>click to read the binding terms and conditions</span></i></p>
+     <p class="conditions"><input type="checkbox" >I have read and agree to the terms and conditions.</p>
+     <div><button onclick="createAccount()" href="login.html">  Create Account</button></div>
+     <p class="already">Already have an account?<a href="login.html"> <span>Click  to login</span></a></p>
+        
     </form>
-
-    </div>
-    <div class="col-3 second">
+  
+   </div>
+   <div class="col-3 second">
       <h2 class="logo2"></h2>
-    </div>
+   </div>
     
   </div>
 </body>
 </html>
 
 
-<!-- <section>
-    <div class="line1">
-        <label>First Name</label>
-        <input type="text" placeholder="Enter first name" name="First Name">
-    </div>
-    <div class="line1">
-        <label>Last Name</label>
-        <input type="text" placeholder="Enter last name" name="Last Name">
-    </div>
-    </section>
-    <div class="line1">
-        <label>Business Name</label>
-        <input type="text" placeholder="Enter account name" name="Business name">
-    </div>
-    <div class="line1">
-        <label>Phone</label>
-        <input type="tel" placeholder="Enter phone number" name="Phone Number">
-    </div>
-    <label>Email address</label>
-        <input type="email" placeholder="Email name" name="Email address"><br>
-    <div class="line1">
-        <label>Password</label>
-        <input type="text" name="Password">
-    </div>
-    <div class="line1">
-        <label>Confirm Password</label>
-        <input type="text"  name="Confirm Password">  
-    </div> -->
