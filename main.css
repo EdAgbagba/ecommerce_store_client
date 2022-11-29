@@ -11,7 +11,9 @@ body {
 #mainbody {
   width: 100%;
 }
-
+#mainbody {
+  height: 100%;
+}
 #header > div {
   font-style: normal;
   font-weight: 400;
@@ -28,38 +30,53 @@ body {
   position: absolute;
   width: 156px;
   height: 51px;
-  left: 142px;
+  left: 215.5px;
   top: 34px;
 }
 #header > div:nth-of-type(2) {
   width: 92px;
-  left: 435px;
+  left: 508.5px;
   top: 50px;
 }
 #header > div:nth-of-type(3) {
   width: 81px;
-  left: 555px;
+  left: 628.5px;
   top: 50px;
 }
 #header > div:nth-of-type(4) {
   width: 88px;
-  left: 675px;
+  left: 748.5px;
   top: 50px;
+  cursor: pointer;
+}
+#header > section {
+  position: absolute;
+  width: 11px;
+  height: 19px;
+  left: 839.5px;
+  top: 53px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  transform: rotate(90deg);
 }
 #header > div:nth-of-type(5) {
   width: 81px;
-  left: 795px;
+  left: 868.5px;
   top: 50px;
 }
 #header > div:nth-of-type(6) {
   width: 119px;
-  left: 915px;
+  left: 988.5px;
   top: 50px;
 }
 #header > div:nth-of-type(7) {
   position: absolute;
   height: 56px;
-  left: 1132px;
+  left: 1205.5px;
   top: 31px;
   background: #000000;
   border-radius: 50px;
@@ -74,11 +91,29 @@ body {
   color: white;
   cursor: pointer;
 }
+.display {
+  position: absolute;
+  left: 740.5px;
+  top: 80px;
+  border: solid 1px black;
+  width: 200px;
+  display: none;
+  flex-direction: column;
+}
+.display> div{
+  width: 100%;
+}
+.display> div>a{
+  text-decoration: none;
+}
+.dropdown{
+  display: flex;
+}
 #main-index > div:nth-of-type(1) {
   position: absolute;
   width: 416px;
   height: 96px;
-  left: 142px;
+  left: 215.5px;
   top: 399px;
   font-style: normal;
   font-weight: 700;
@@ -90,7 +125,7 @@ body {
   position: absolute;
   width: 403px;
   height: 19px;
-  left: 142px;
+  left: 215.5px;
   top: 503px;
   font-style: normal;
   font-weight: 500;
@@ -103,7 +138,7 @@ body {
   position: absolute;
   width: 300px;
   height: 300px;
-  left: 605px;
+  left: 678.5px;
   top: 305.24px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -125,7 +160,7 @@ body {
   position: absolute;
   width: 300px;
   height: 300px;
-  left: 970.27px;
+  left: 1043.77px;
   top: 305px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -143,7 +178,7 @@ body {
   position: absolute;
   width: 194px;
   height: 29px;
-  left: 142px;
+  left: 215.5px;
   top: 771px;
   font-style: normal;
   display: flex;
@@ -154,19 +189,18 @@ body {
   position: absolute;
   width: 351px;
   height: 72px;
-  left: 142px;
+  left: 215.5px;
   top: 820px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-
 }
 #main-index > div:nth-of-type(5) {
   position: absolute;
   width: 185px;
   height: 58px;
-  left: 141px;
+  left: 215.5px;
   top: 929px;
   background-color: #000000;
   border-radius: 50px;
@@ -186,22 +220,21 @@ body {
   position: absolute;
   width: 475px;
   height: 360px;
-  left: 510px;
+  left: 583.5px;
   top: 707px;
 }
 #main-index > div:nth-of-type(7) {
   position: absolute;
   width: 213px;
   height: 158px;
-  left: 970px;
+  left: 1043.5px;
   top: 808px;
-  
 }
 #main-index > div:nth-of-type(8) {
   position: absolute;
   width: 71px;
   height: 149px;
-  left: 1223px;
+  left: 1296.5px;
   top: 812px;
 }
 
@@ -209,7 +242,7 @@ body {
   position: absolute;
   width: 321px;
   height: 77px;
-  left: 286px;
+  left: 359.5px;
   top: 285px;
   display: flex;
   align-items: center;
@@ -219,7 +252,7 @@ body {
   position: absolute;
   width: 508px;
   height: 58px;
-  left: 607px;
+  left: 680.5px;
   top: 294px;
   font-family: "Inter";
   font-style: normal;
@@ -232,7 +265,7 @@ body {
   position: absolute;
   width: 830px;
   height: 58px;
-  left: 305px;
+  left: 378.5px;
   top: 415px;
 
   font-family: "Inter";
@@ -248,7 +281,7 @@ body {
   position: absolute;
   width: 185px;
   height: 58px;
-  left: 529px;
+  left: 602.5px;
   top: 567px;
   font-family: "Inter";
   font-style: normal;
@@ -260,7 +293,7 @@ body {
 #main-personax > div:nth-of-type(1) {
   position: absolute;
   width: 321px;
-  height: 99px;
+  height: 172.5px;
   left: 285px;
   top: 248px;
 }
@@ -272,7 +305,7 @@ body {
   position: absolute;
   width: 423px;
   height: 117px;
-  left: 285px;
+  left: 358.5px;
   top: 423px;
   font-style: normal;
   font-weight: 700;
@@ -284,7 +317,7 @@ body {
   position: absolute;
   width: 456px;
   height: 19px;
-  left: 285px;
+  left: 358.5px;
   top: 564px;
   font-style: normal;
   font-weight: 500;
@@ -296,7 +329,7 @@ body {
   position: absolute;
   width: 398px;
   height: 58px;
-  left: 830px;
+  left: 903.5px;
   top: 384px;
   font-style: normal;
   font-weight: 700;
@@ -308,7 +341,7 @@ body {
   position: absolute;
   width: 288px;
   height: 58px;
-  left: 830px;
+  left: 903.5px;
   top: 482px;
   font-family: "Inter";
   font-style: normal;
@@ -321,7 +354,7 @@ body {
   position: absolute;
   width: 185px;
   height: 58px;
-  left: 285px;
+  left: 358.5px;
   top: 615px;
   color: white;
   background-color: black;
@@ -340,7 +373,7 @@ body {
   position: absolute;
   width: 623px;
   height: 39px;
-  left: 429px;
+  left: 502.5px;
   top: 710px;
   font-style: normal;
   font-weight: 700;
@@ -351,7 +384,7 @@ body {
   position: absolute;
   width: 546px;
   height: 38px;
-  left: 474px;
+  left: 547.5px;
   top: 763px;
   font-style: normal;
   font-weight: 500;
@@ -364,21 +397,21 @@ body {
   position: absolute;
   width: 295px;
   height: 200px;
-  left: 285px;
+  left: 358.5px;
   top: 841px;
 }
 #main-personax > div:nth-of-type(10) {
   position: absolute;
   width: 295px;
   height: 200px;
-  left: 609px;
+  left: 682.5px;
   top: 841px;
 }
 #main-personax > div:nth-of-type(11) {
   position: absolute;
   width: 295px;
   height: 200px;
-  left: 933px;
+  left: 1006.5px;
   top: 841px;
 }
 footer {
@@ -388,15 +421,14 @@ footer {
   top: 1070px;
   background-color: #185375;
   bottom: 0px;
-
 }
 #footer {
   position: absolute;
-  left: 142px;
+  left: 215.5px;
   right: 289px;
   display: flex;
 }
-.columns{
+.columns {
   display: flex;
   flex-direction: column;
   width: 25%;
@@ -405,16 +437,15 @@ footer {
   padding: 70px 0 0 0;
   height: min-content;
 }
-
-.columns>*{
+.columns > * {
   width: 100%;
   text-align: left;
   margin-bottom: 20px;
 }
-.columns:nth-of-type(1)>*{
+.columns:nth-of-type(1) > * {
   margin: 0px;
 }
-.columns:nth-of-type(4)>div>img{
+.columns:nth-of-type(4) > div > img {
   background-color: white;
-  width:min-content;
+  width: min-content;
 }

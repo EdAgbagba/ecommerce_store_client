@@ -18,11 +18,16 @@
             <div><img src="images/PersolLogo.svg" alt="persol logo"></div>
             <div><a href="index.html" style="color: #185375;">Overview</a></div>
             <div><a href="#">Support</a></div>
-            <div><a href="#">Products</a></div>
+            <div onmouseover="dropdown()" onmouseleave="left()">Products</div>
+            <section>></section>
             <div><a href="#">Contact</a></div>
             <div><a href="login.html">My Account</a></div>
             <div><button onclick="location.href='login.html'">Sign In</button></div>
 
+            <div id="dropdown" class="display " style="height:100PX;"  onmouseover="dropdown()" onmouseleave="left()">
+                <div><a href="sikasem.html">SIKASEM</a></div>
+                <div><a href="personax.html">PERSONAX</a></div>
+            </div>
         </div>
         <div id="main-index">
 
@@ -33,7 +38,7 @@
                 Grow your business the personax way
             </div>
             <div>
-                <img src="images/SikasemLogo.svg" alt="sikasem logo" onclick="location.href='sikasem.html'" >
+                <img src="images/SikasemLogo.svg" alt="sikasem logo" onclick="location.href='sikasem.html'">
             </div>
             <div>
                 <img src="images/PersonaxLogo.svg" alt="personax logo" onclick="location.href='personax.html'">
@@ -80,6 +85,18 @@
             </div>
         </footer>
     </div>
+    <script>
+        function dropdown() {
+            let drop = document.getElementById('dropdown');
+                drop.classList.add('dropdown')
+            
+        }
+        function left(){
+            let drop = document.getElementById('dropdown');
+                console.log("here")
+                drop.classList.remove('dropdown')
+        }
+    </script>
 </body>
 
 </html>
