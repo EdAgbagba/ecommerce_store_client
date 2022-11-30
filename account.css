@@ -36,8 +36,8 @@ body{
     width:50%;
     height: 925px;
     background-color:white;
-    padding-left:50px;
-    padding-right:50px;
+    padding-left:60px;
+    padding-right:60px;
     background-repeat: no-repeat;
   
 }
@@ -80,7 +80,7 @@ input[type="password"]{
     padding-left: 20px;
     background-image:url(images/Vector.png), url(images/Line\ 5\ \(1\).png) ;
     background-repeat: no-repeat, no-repeat ;
-    background-position: 310px, 300px ; 
+    background-position: 350px, 320px ; 
 }
 
 
@@ -176,14 +176,14 @@ button{
     top: 0px;
     background: #000000;
     border-radius: 10px;
-   font-family: 'Inter';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    margin: 70px 70px 70px 500px;
-
+    /* margin: 70px 600px 70px 500px; */
+    
 }
 
 i{
@@ -213,4 +213,9 @@ label::after{
 
 a{
     text-decoration-line: none;
+}
+
+
+.click{
+    text-align: end;
 }
