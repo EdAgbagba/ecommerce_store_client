@@ -49,7 +49,7 @@ body {
   top: 50px;
   cursor: pointer;
 }
-#header > section {
+/*#header > section {
   position: absolute;
   width: 11px;
   height: 19px;
@@ -62,7 +62,7 @@ body {
   line-height: 19px;
   color: #000000;
   transform: rotate(90deg);
-}
+}*/
 #header > div:nth-of-type(5) {
   width: 81px;
   left: 868.5px;
@@ -92,22 +92,14 @@ body {
   cursor: pointer;
 }
 .dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
 }
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -120,13 +112,20 @@ body {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
 #main-index > div:nth-of-type(1) {
   position: absolute;
   width: 416px;
@@ -466,4 +465,29 @@ footer {
 .columns:nth-of-type(4) > div > img {
   background-color: white;
   width: min-content;
+}
+#last {
+  display: flex;
+  position: absolute;
+  bottom: 70px;
+  left: 215.5px;
+  right: 289px;
+  height: 19px;
+  line-height: 19px;
+}
+#last > * {
+  width: 50%;
+  height: 100%;
+  font-size: 20px;
+}
+#last > section:nth-of-type(1) {
+  color: #ffffff;
+}
+#last > section:nth-of-type(2) {
+  display: flex;
+}
+#last > section:nth-of-type(2) > * {
+  width: 15%;
+  height: 100%;
+  text-align: end;
 }
