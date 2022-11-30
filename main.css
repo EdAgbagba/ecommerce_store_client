@@ -44,25 +44,11 @@ body {
   top: 50px;
 }
 #header > div:nth-of-type(4) {
-  width: 88px;
+  width: 108px;
   left: 748.5px;
   top: 50px;
   cursor: pointer;
 }
-/*#header > section {
-  position: absolute;
-  width: 11px;
-  height: 19px;
-  left: 839.5px;
-  top: 53px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #000000;
-  transform: rotate(90deg);
-}*/
 #header > div:nth-of-type(5) {
   width: 81px;
   left: 868.5px;
