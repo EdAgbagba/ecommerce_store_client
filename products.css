@@ -1,0 +1,381 @@
+body {
+    font-family: "Inter", sans-serif;
+    position: relative;
+    height: 1470px;
+    width: 1577px;
+    background: #fff6ef;
+    color: black;
+    margin: 0px;
+ 
+  }
+  #header,
+  #mainbody {
+    width: 100%;
+  }
+  
+  #header > div {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 19px;
+    height: 19px;
+    position: absolute;
+  }
+  #header > div > a {
+    text-decoration: none;
+    color: black;
+  }
+  #header > div:nth-of-type(1) {
+    position: absolute;
+    width: 156px;
+    height: 51px;
+    left: 142px;
+    top: 34px;
+  }
+  #header > div:nth-of-type(2) {
+    width: 92px;
+    left: 435px;
+    top: 50px;
+  }
+  #header > div:nth-of-type(3) {
+    width: 81px;
+    left: 555px;
+    top: 50px;
+  }
+  #header > div:nth-of-type(4) {
+    width: 88px;
+    left: 675px;
+    top: 50px;
+  }
+  #header > div:nth-of-type(5) {
+    width: 81px;
+    left: 795px;
+    top: 50px;
+  }
+  #header > div:nth-of-type(6) {
+    width: 119px;
+    left: 915px;
+    top: 50px;
+  }
+  #header > div:nth-of-type(7) {
+    position: absolute;
+    height: 56px;
+    left: 1132px;
+    top: 31px;
+    background: #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 156px;
+  }
+  #header > div:nth-of-type(7) > button {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+  }
+
+  #sikasem_logo {
+    width: 112px;
+    height: 23px;
+    margin: auto 23px auto 24px;
+  }
+ #formorder{
+    /* position: absolute; */
+    display: flex;
+    /* position: absolute; */
+    align-content: center;
+    flex-wrap: wrap;
+    width: 742px;
+    height: 72px;
+    justify-content: flex-start;
+    left: 165px;
+    top: 225px;
+    background: #ABABAB;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    /* background-image: url(images/Sikasem\ Logo\ 2.png); */
+    background-repeat: no-repeat;
+    background-position: 20px 30px;
+     
+  }
+
+  .card{
+    position: absolute;
+    width: 742px;
+    height: 574px;
+    left: 165px;
+    top: 225px;
+    background: #FFFFFF;
+    border-radius: 15px;
+  }
+
+  .busname{
+    display:grid;
+    grid-template-columns: 1fr;
+    width :100%;
+    box-sizing: border-box;
+
+  }
+
+  .industry{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .info{
+    display:block; 
+  }
+
+
+ .busname > input[type="text"]{
+    box-sizing: border-box;
+    width: 670px;
+    height: 50px;
+    left: 209px;
+    top: 359px;
+    background: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    border-radius: 5px;
+}
+
+.one > input[type="text"]{
+    box-sizing: border-box;
+    width: 311px;
+    height: 50px;
+    left: 211px;
+    top: 476px;
+    background: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    border-radius: 5px;
+}
+
+.two >input[type="text"], [type="email"]{
+    box-sizing: border-box;
+    width: 323px;
+    height: 50px;
+    left: 536px;
+    top: 476px;
+    background: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    border-radius: 5px;
+}
+
+button{
+        
+    width: 224px;
+    height: 59px;
+    left: 635px;
+    top: 691px;
+    background: #000000;
+    border-radius: 10px;
+   
+}
+
+#details{
+    width: 180px;
+    height: 19px;
+    left: 649px;
+    top: 711px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    width: 224px;
+    height: 59px;
+    left: 635px;
+    top: 691px;
+   
+
+}
+
+
+.smalltable{
+  position:absolute;
+  width: 327px;
+  height: 176px;
+  left: 948px;
+  top: 225px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding-top: 70px;
+padding-left: 20px;
+padding-right: 0px;
+
+}
+
+
+#tableorder{
+    position: absolute;
+    z-index: 1;
+    width: 346px;
+    height: 72px;
+    left: 948px;
+    top: 225px;
+    background: #ABABAB;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 0px;
+   
+}
+
+.due{
+width: 93px;
+height: 24px;
+left: 967px;
+top: 390px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+
+color: #525252;
+}
+
+
+
+
+.due{
+width: 93px;
+height: 24px;
+left: 967px;
+top: 390px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #525252;
+}
+#money{
+  width: 54px;
+  height: 19px;
+  left: 1200px;
+  top: 321px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  padding-left: 140px;
+ 
+}
+
+
+#money1{
+  width: 71px;
+  height: 24px;
+  left: 1183px;
+  top: 390px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #525252;
+  padding-left: 130px;
+}
+
+#line7{
+width: 287px;
+height: 0px;
+left: 967px;
+top: 366px;
+border: 1px solid #ABABAB;
+transform: rotate(0.01deg);
+z-index: 1;
+}
+
+.styleorder{
+
+width: 158px;
+height: 24px;
+left: 967px;
+top: 249px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+
+}
+
+.view{
+  margin-left: 470px;
+  margin-top: 30px;
+}
+
+label{
+  margin-bottom: 10px;
+}
+
+input{
+  margin-bottom: 30px;
+}
+
+.form{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#orderform{
+  width: 115px;
+  height: 24px;
+  left: 312px;
+  top: 250px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+
+}
+
+.summaryorder{
+  margin-left: 20px;
+    
+}
+
+hr{
+  
+  width: 300px;
+  height: 0px;
+  /* left: 967px;
+  top: 366px; */
+  border: 1px solid #ABABAB;
+  /* transform: rotate(0.01deg); */
+
+}
+
+.orderitems{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-right: 20px;
+  
+}
+
+.orderitems > li > img{
+  width: 85px;
+height: 20px;
+margin-left: -21px;
+}
+
+.orderitems > li {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+#ordertotal{
+  display: flex;
+  align-items: center;
+}
