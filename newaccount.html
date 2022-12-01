@@ -15,7 +15,7 @@
       </div>
       <div class="col-6">
         <h1>Create New Account</h1>
-        <form>
+        <form action="./products.html" >
           <div>
             <div class="user-details">
               <div class="input-box">
@@ -76,7 +76,7 @@
             <div class="user-details">
               <div class="input-box">
                 <label class="details">Password </label><br />
-                <input type="password" name="Password" id="password" required />
+                <input type="password" name="Password" id="password" minlenghth="8" required />
               </div>
               <div class="input-box">
                 <label for="cmfPswd" class="details">Confirm Password </label
@@ -85,6 +85,7 @@
                   id="cmfPswd"
                   type="password"
                   name="ConfirmPassword"
+                  minlength="8"
                   required
                 />
               </div>
@@ -96,12 +97,12 @@
             ><span><i>click to read the binding terms and conditions</i></span>
           </p>
           <p class="conditions">
-            <input type="checkbox" />I have read and agree to the terms and
+            <input type="checkbox" required />I have read and agree to the terms and
             conditions.
           </p>
           <div class="click">
          <button onclick="createAccount()" type="submit">
-          <a href="./products.html">Create Account</a>
+          Create Account
             </button>
           </div>
           <p class="already">
