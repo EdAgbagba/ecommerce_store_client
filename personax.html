@@ -19,12 +19,15 @@
             <div><a href="index.html">Overview</a></div>
             <div><a href="#">Support</a></div>
             <div class="dropdown">
-                Products
-                <div class="dropdown-content">
-                  <a href="sikasem.html">SIKASEM</a>
-                  <a style="background-color: #185375; color: white" href="personax.html">PERSONAX</a>
+                <div style="display: flex;">
+                    <section style="margin-right: 5px;">Products</section>
+                    <section style="padding: 3px 0 0 2px;transform: rotate(90deg);">></section>
                 </div>
-              </div>
+                <div class="dropdown-content">
+                    <a href="sikasem.html">SIKASEM</a>
+                    <a style="background-color: #185375; color: white" href="personax.html">PERSONAX</a>
+                </div>
+            </div>
             <div><a href="#">Contact</a></div>
             <div><a href="login.html">My Account</a></div>
             <div><button onclick="location.href='login.html'">Sign In</button></div>
@@ -39,10 +42,10 @@
             <div>
                 Join this amazing experience for as low as GHS199 a month
             </div>
-            <div>&#x2022; PersonaX Lite</div>
-            <div>&#x2022; Standard</div>
+            <div id="lite" onclick="selectedProduct('lite')">&#x2022; PersonaX Lite</div>
+            <div id="standard" onclick="selectedProduct('standard')">&#x2022; Standard</div>
             <div>
-                <button onclick="location.href='#'">Buy Now > </button>
+                <button onclick="location.href='products.html'">Buy Now > </button>
             </div>
             <div>
                 Wonderful applications within this suite
@@ -59,7 +62,7 @@
             <div id="footer">
                 <div class="columns">
                     <div>Get Our Mobile App</div>
-                    <div><img src="images/googleplay.svg" alt="google play" width="200"></div>
+                    <div><a href="#"><img src="images/googleplay.svg" alt="google play" width="200"></a></div>
                 </div>
                 <div class="columns">
                     <div>About</div>
@@ -75,10 +78,22 @@
                     <div>Powered-By</div>
                     <div><img src="images/PersolLogo.svg" alt="persol logo"></div>
                 </div>
-
+            </div>
+            <div id="last">
+                <section>
+                    &copy; Persol Systems Limited 2022 All rights reserved.
+                </section>
+                <section>
+                    <a href="#"><img src="images/facebook.png" alt="facebook" height="100%"></a>
+                    <a href="#"><img src="images/google.png" alt="google" height="100%"></a>
+                    <a href="#"><img src="images/twitter.png" alt="twitter" height="100%"></a>
+                    <a href="#"><img src="images/github.png" alt="github" height="100%"></a>
+                    <a href="#"><img src="images/linkedin.png" alt="linkedin" height="100%"></a>
+                </section>
             </div>
         </footer>
     </div>
+    <script src="utils.js"></script>
 </body>
 
 </html>
