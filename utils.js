@@ -1,5 +1,5 @@
 let selectedProduct = function(name) {
-  let mychoice;
+  let mychoice = '';
   let dim;
     
   if (name === "lite") {
@@ -22,6 +22,5 @@ let selectedProduct = function(name) {
     
   }
   console.log(mychoice)
-  localStorage.setItem("mychoice",JSON.stringify(mychoice));
+  localStorage.setItem("mychoice",(mychoice));
 }
-
