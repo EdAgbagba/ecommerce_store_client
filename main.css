@@ -338,7 +338,6 @@ body {
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
-  color: #000000;
 }
 #main-personax > div:nth-of-type(5) {
   position: absolute;
@@ -351,7 +350,14 @@ body {
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
-  color: #cbcbcb;
+}
+#main-personax > div:nth-of-type(4):hover,
+#main-personax > div:nth-of-type(5):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.dimmer{
+  color: rgba(203, 203, 203,.5);
 }
 #main-personax > div:nth-of-type(6) {
   position: absolute;
