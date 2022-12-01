@@ -29,45 +29,50 @@
                 </div>
                 <div class="form">
                 <div class="busname">
-                    <label>Business Name</label>
-                    <input type="text" name="Business Name">
+                    <label >Business Name</label>
+                    <input type="text" name="Business Name" id="businessname">
                 </div>
                 <div class="industry">
                     <div class="one">
                         <label class="info">Select Industry</label>
-                        <input type="text" name="Select Industry">
+                        <!-- <input type="text" name="Select Industry"> -->
+                        <select id="industry" name="industry">
+                            <option value="Select Industry Type" selected>Select Industry Type</option>
+                        </select>
                     </div>
                     <div class="two">
                         <label class="info">Select Payment Cycle</label>
-                        <input type="text" name="Select Payment Cycle">
+                        <!-- <input type="text" name="Select Payment Cycle"> -->
+                        <select id="Month" name="Month">
+                            <option value="Monthly" selected>Monthly</option>
+                        </select>
                     </div>
-        
+                
                     <div class="one">
                         <label class="info">Username</label>
-                        <input type="text" name="Username">
+                        <input type="text" name="Username" id="username">
                     </div>
                     <div class="two">
                         <label class="info">Email</label>
-                        <input type="email" name="Email">
+                        <input type="email" name="Email" id="email">
                     </div>
                 </div>
                 </div>
-                <div class="view"><button id="details">View Full Order Details</button></div>
-            </div>
-                <div  id="tableorder">
-                   
-                <h2 class="summaryorder">Order Summary</h2>
-            </div>
-                <div class="smalltable" >
+                <div class="view"><button id="details" onclick="viewDetails()">View Full Order Details</button></div>
+                </div>
+                <div id="tableorder">
+                
+                    <h2 class="summaryorder">Order Summary</h2>
+                </div>
+                <div class="smalltable">
                     <ul class="orderitems">
                         <li>
                             <img src="./images/Sikasem Logo 2.png">
                             <p id="money">200.00</p>
-
+                
                         </li>
-                        
+                
                     </ul>
-                  
                     <hr>
                       <div id="ordertotal">
                         <p class="due">Total Due</p>
@@ -75,5 +80,6 @@
                     </div>
                         </div>
     </main>
+    <script src="./products.js" ></script>
 </body>
 </html>
