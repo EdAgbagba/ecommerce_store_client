@@ -7,8 +7,87 @@
     <title>Document</title>
     <link rel="stylesheet" href="account.css" />
   </head>
-
-  <body>
+  <body id="account">
+    <div class="left">
+      <img
+        class="logo"
+        src="./images/Sikasem Logo (White) 1.png"
+        alt="Sikasem Logo"
+      />
+    </div>
+    <div class="middle">
+      <h1>Create New Account</h1>
+      <form action="./products.html">
+        <div class="input-row">
+          <div class="input-box">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstname" />
+          </div>
+          <div class="input-box">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastname" />
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-box">
+            <label for="businessName">Business Name</label>
+            <input type="text" id="businessName" />
+          </div>
+          <div class="input-box">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" />
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-box full-input">
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-box">
+            <label for="password">Password</label>
+            <input type="text" id="password" />
+            <small class="helper-text"
+              >password length must be greater than 8</small
+            >
+          </div>
+          <div class="input-box">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="text" id="confirmPassword" />
+            <small class="helper-text">password must match</small>
+          </div>
+        </div>
+        <p id="t-and-c">
+          <strong>Kindly </strong
+          ><span><i>click to read the binding terms and conditions</i></span>
+        </p>
+        <p class="conditions">
+          <input type="checkbox" required />I have read and agree to the terms
+          and conditions.
+        </p>
+        <div class="click">
+          <button onclick="createAccount()" type="submit">
+            Create Account
+          </button>
+        </div>
+        <p class="already">
+          Already have an account?<a href="login.html">
+            <span>Click to login</span></a
+          >
+        </p>
+      </form>
+    </div>
+    <div class="right">
+      <img
+        class="logo"
+        src="./images/Personax Logo (White) 1.png"
+        alt=""
+        srcset=""
+      />
+    </div>
+  </body>
+  <!-- <body>
     <div class="row">
       <div class="col-3 first">
         <h2 class="logo1"></h2>
@@ -119,5 +198,5 @@
 
     <sript src="./createAccount.js"></sript>
 
-  </body>
+  </body> -->
 </html>
