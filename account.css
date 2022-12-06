@@ -1,222 +1,239 @@
-body{
-    width: 100%;
-    height: 100%;
-   
-}
-*{
-    box-sizing: border-box;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.row{
-    position:relative;
-    width: 100%;
-    height:925px;
-   
+#account {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: 100vh;
 }
 
-.row::after{
-    content:"";
-    display: table;
-    clear: both;
+#t-and-c {
+  margin-top: 30px;
 }
 
-[class*="col-"]{
-    float: left;
+body {
+  width: 100%;
+  height: 100%;
 }
 
-.col-3{
-    width: 25%;
-    height: 925px;
-    background-color: blue;
-    background-repeat: no-repeat;
-    
+.row {
+  position: relative;
+  width: 100%;
+  height: 925px;
 }
 
-.col-6{
-    width:50%;
-    height: 925px;
-    background-color:white;
-    /* padding-left:60px;
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.col-3 {
+  width: 25%;
+  height: 925px;
+  background-color: blue;
+  background-repeat: no-repeat;
+}
+
+.col-6 {
+  width: 50%;
+  height: 925px;
+  background-color: white;
+  /* padding-left:60px;
     padding-right:60px; */
-    background-repeat: no-repeat;
-    padding: 0px 160px;
-  
+  background-repeat: no-repeat;
+  padding: 0px 160px;
 }
 
-.first{
-    background: url("images/roberto-carlos-roman-don-K77xDt7E1fE-unsplash\ 1\ 1.png"); 
+.left {
+  background-image: url("images/roberto-carlos-roman-don-K77xDt7E1fE-unsplash\ 1\ 1.png");
+  background-position: top;
+  background-position: 100%;
 }
 
-.second{
-    background:url("images/alex-starnes-PK_t0Lrh7MM-unsplash\ 1\ \(1\)\ 1.png");
+.right {
+  background: url("images/alex-starnes-PK_t0Lrh7MM-unsplash\ 1\ \(1\)\ 1.png");
+  background-position: 100%;
 }
 
-input[type="text"],[type="email"], [type="tel"]{
-    width: 100%;
-    height: 50px;
-    margin: 15px 0px;
-    border: 1px solid #C5C5C5;
-    border-radius: 10px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #838383;
-    padding-left: 20px;
+.full-input {
+  width: 100% !important;
 }
 
-input[type="password"]{
-    width: 100%;
-    height: 50px;
-    margin: 15px 0px;
-    border: 1px solid #C5C5C5;
-    border-radius: 10px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #838383;
-    padding-left: 20px;
-    background-image:url("images/Vector.png"), url("images/Line\ 5\ \(1\).png") ;
-    background-repeat: no-repeat, no-repeat ;
-    background-position: 350px, 320px ; 
+input[type="text"],
+[type="email"],
+[type="tel"] {
+  width: 100%;
+  height: 50px;
+  margin: 15px 0px;
+  border: 1px solid #c5c5c5;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #838383;
+  padding-left: 20px;
 }
 
-
-
-.logo1{
-    background: url("images/Sikasem\ Logo\ \(White\)\ 1.png");
-    background-repeat:no-repeat;
-    width: 200px;
-    height: 200px;
-    margin: 20px 90px;
-    
- } 
- 
- .logo2{
-    background: url("images/Personax\ Logo\ \(White\)\ 1.png");
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    margin: 20px 100px
- }
- 
- label{
-     font-family: 'Inter';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 19px;
- 
-     color: #000000;
-     
- }
-.label::after{
-    content:"*" ;
-    color:red ;  
+input[type="password"] {
+  width: 100%;
+  height: 50px;
+  margin: 15px 0px;
+  border: 1px solid #c5c5c5;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #838383;
+  padding-left: 20px;
+  background-image: url("images/Vector.png"), url("images/Line\ 5\ \(1\).png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 350px, 320px;
 }
 
-
-.user-details{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 10px;
+.logo {
+  margin: 10%;
 }
 
- .email-details{
-    display: grid;
-    grid-template-columns: 1fr; 
-   
+.input-row {
+  display: flex;
+  justify-content: space-between;
 }
 
-
-.details{
-    display : block;
+.input-row > * {
+  flex: 50%;
 }
 
-.input-box{
-    margin-right: 15px;
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 80px;
 }
 
-.conditions{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #747474;
-
+.middle > h1 {
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 40px;
 }
 
-span{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #079EDF;
+label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+}
+.label::after {
+  content: "*";
+  color: red;
 }
 
-.already{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #747474;
-
+.user-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
-button{
-    
-    width: 253px;
-    height: 59px;
-    left: 90px;
-    top: 0px;
-    background: #000000;
-    border-radius: 10px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-    /* margin: 70px 600px 70px 500px; */
-    
+.email-details {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-i{
-    border-bottom: 1px dashed #079EDF;
-
-    
-}
-.col-12{
-    width: 100%;
-    max-width:200px;
-}
-h1{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    color: #000000;
-    margin-left:90px;
-
+.details {
+  display: block;
 }
 
-label::after{
-    content:"*";
-    color: red;
+.input-box {
+  margin-right: 15px;
 }
 
-a{
-    text-decoration-line: none;
+.conditions {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #747474;
 }
 
+span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #079edf;
+}
 
-.click{
-    text-align: end;
+.already {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #747474;
+}
+
+button {
+  width: 253px;
+  height: 59px;
+  left: 90px;
+  top: 0px;
+  background: #000000;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  /* margin: 70px 600px 70px 500px; */
+}
+
+i {
+  border-bottom: 1px dashed #079edf;
+}
+.col-12 {
+  width: 100%;
+  max-width: 200px;
+}
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  margin-left: 90px;
+}
+
+label::after {
+  content: "*";
+  color: red;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.click {
+  text-align: end;
+  margin-right: 24px;
 }
