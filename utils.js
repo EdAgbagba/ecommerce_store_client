@@ -1,5 +1,5 @@
 let selectedProduct = function(name) {
-  let mychoice = '';
+  let mychoice;
   let dim;
     
   if (name === "lite") {
