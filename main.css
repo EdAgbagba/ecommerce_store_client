@@ -10,6 +10,7 @@ body {
 #header,
 #mainbody {
   width: 100%;
+  
 }
 #mainbody {
   height: 100%;
@@ -77,9 +78,6 @@ body {
   color: white;
   cursor: pointer;
 }
-.dropbtn {
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -353,7 +351,7 @@ body {
 }
 #main-personax > div:nth-of-type(4):hover,
 #main-personax > div:nth-of-type(5):hover {
-  text-decoration: underline;
+
   cursor: pointer;
 }
 .dimmer{
