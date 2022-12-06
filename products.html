@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="products.css">
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
+
 <body>
     <div id="header">
         <div><img src="images/PersolLogo.svg" alt="persol logo"></div>
@@ -25,15 +30,14 @@
         <div><button onclick="location.href='index.html'">Logout</button></div>
     </div>
     <main>
-       
-            <div class="card">
-                <div id="formorder">
-                    <img id="sikasem_logo" src="images/Sikasem Logo 2.png" alt="">
-                    <h2 >Order form</h2>
-                </div>
-                <div class="form">
+        <div class="card">
+            <div id="formorder">
+                <img id="sikasem_logo" class="toBuy" src="" alt="">
+                <h2>Order form</h2>
+            </div>
+            <div class="form">
                 <div class="busname">
-                    <label >Business Name</label>
+                    <label>Business Name</label>
                     <input type="text" name="Business Name" id="businessname">
                 </div>
                 <div class="industry">
@@ -42,7 +46,8 @@
                         <!-- <input type="text" name="Select Industry"> -->
                         <select id="industry" name="industry">
                             <option value="Select Industry Type" selected>Select Industry Type</option>
-                            <option value="advertising-media-communications">Advertising, Media &amp; Communications</option>
+                            <option value="advertising-media-communications">Advertising, Media &amp; Communications
+                            </option>
                             <option value="agriculture-fishing-forestry">Agriculture, Fishing &amp; Forestry</option>
                             <option value="automotive-aviation">Automotive &amp; Aviation</option>
                             <option value="banking-finance-insurance">Banking, Finance &amp; Insurance</option>
@@ -62,9 +67,9 @@
                             <option value="recruitment">Recruitment</option>
                             <option value="retail-fashion-fmcg">Retail, Fashion &amp; FMCG</option>
                             <option value="shipping-logistics">Shipping &amp; Logistics</option>
-                        
+
                         </select>
-                        </div>
+                    </div>
                     <div class="two">
                         <label class="info">Select Payment Cycle</label>
                         <!-- <input type="text" name="Select Payment Cycle"> -->
@@ -75,7 +80,7 @@
                             <option value="Anually">Anually</option>
                         </select>
                     </div>
-                
+
                     <div class="one">
                         <label class="info">Username</label>
                         <input type="text" name="Username" id="username">
@@ -85,29 +90,31 @@
                         <input type="email" name="Email" id="email">
                     </div>
                 </div>
-                </div>
-                <div class="view"><button id="details" onclick="viewDetails()">View Full Order Details</button></div>
-                </div>
-                <div id="tableorder">
-                
-                    <h2 class="summaryorder">Order Summary</h2>
-                </div>
-                <div class="smalltable">
-                    <ul class="orderitems">
-                        <li>
-                            <img src="./images/Sikasem Logo 2.png">
-                            <p id="money">200.00</p>
-                
-                        </li>
-                
-                    </ul>
-                    <hr>
-                      <div id="ordertotal">
-                        <p class="due">Total Due</p>
-                        <p id="money1">200.00</p>
-                    </div>
-                        </div>
+            </div>
+            <div class="view"><button id="details" onclick="viewDetails()">View Full Order Details</button></div>
+        </div>
+        <div id="tableorder">
+
+            <h2 class="summaryorder">Order Summary</h2>
+        </div>
+        <div class="smalltable">
+            <ul class="orderitems">
+                <li>
+                    <img class="toBuy" src="">
+                    <p id="money"  class="price">0.00</p>
+
+                </li>
+
+            </ul>
+            <hr>
+            <div id="ordertotal">
+                <p class="due">Total Due</p>
+                <p id="money1" class="price">0.00</p>
+            </div>
+        </div>
     </main>
-    <script src="./products.js" ></script>
+    <script src="./products.js"></script>
+    <script src="utils.js"></script>
 </body>
+
 </html>
