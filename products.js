@@ -21,3 +21,13 @@ function viewDetails(){
     }
     console.log(details);
   }
+  window.addEventListener("DOMContentLoaded",function(e){
+    let toBuy = "images/" + localStorage.getItem("toBuy")
+    let opts = document.getElementsByClassName("toBuy")
+    opts[0].src=toBuy;
+    opts[1].src=toBuy;
+    let price = localStorage.getItem("price")
+    let toPay = document.getElementsByClassName("price")
+    toPay[0].innerHTML=price
+    toPay[1].innerHTML=price
+  })
