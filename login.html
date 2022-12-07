@@ -5,33 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="row">
-    <div class="col-3 first">
-      <h2 class="logo1"></h2>
-    </div>
-    <div class="col-6">
-      <h1>Welcome</h1>
-      <p class="hr-lines"> Login With Your Email </p>
-      <form action="./products.html">
-        <label>Email Address</label><br>
-        <input type="text" placeholder="Email Address" name="Email address" id="Emailaddress"required><br>
-        <label>Password</label><br>
-        <input type="password" placeholder="Password" minlength="8" name="Password" id="Password" required>
-          <input type="submit" value="Log In">
+    <link rel="stylesheet" href="./account.css" />
+    <script src="./createAccount.js"></script>
 
-        <p class="hr-lines">Or</p>
-       <button ><a target="_blank" href="newaccount.html" class="account" onclick="logIn"> Create New Account</button>
-        <!-- <div><button target="_blank" href="newaccount.html" class="account">  Create Account</button></div> -->
-        
-      </form>
-    </div>
-    <div class="col-3 second">
-      <h2 class="logo2"></h2>
-    </div>
+</head>
+<body id="account">
+  <div class="left">
+    <img class="logo" src="./images/Sikasem Logo (White) 1.png" alt="Sikasem Logo" />
   </div>
-  <script src="./products.js"></script>
+  <div class="middle">
+    <h1>Welcome</h1>
+    <p class="hr-lines">Login With Your Email</p>
+    <form action="./products.html">
+      <div class="input-row">
+        <div class="input-box full-input">
+          <label for="email">Email address</label>
+          <input type="email" placeholder="Email Address" name="Email address" id="email" required />
+        </div>
+      </div>
+      <div class="input-row">
+        <div class="input-box full-input">
+          <label for="email">Password</label>
+          <input type="password" id="password" placeholder="Password" minlength="8" name="Password" required/>
+        </div>
+        </div>
+        <div class="input-row">
+          <div class="input-box full-input">
+            <input type="submit" value="Log In" />
+          </div>
+          </div>
+          <div class="input-row">
+            <div class="input-box full-input">
+              <p class="hr-lines">Or</p>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-box full-input">
+              <button class="login"><a href="newaccount.html" class="account" onclick="LogIn"> Create New Account</a></button>
+            </div>
+          </div>
+        </div>
+  <div class="right">
+    <img class="logo" src="./images/Personax Logo (White) 1.png" alt="" srcset="" />
+  </div>
+ 
 </body>
 </html>
+
+
+
+
+

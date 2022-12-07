@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="account.css" />
+
   </head>
   <body id="account">
     <div class="left">
@@ -19,43 +20,43 @@
       <h1>Create New Account</h1>
       <form action="./products.html">
         <div class="input-row">
-          <div class="input-box">
+          <div class="input-box full">
             <label for="firstName">First Name</label>
-            <input type="text" id="firstname" />
+            <input type="text" id="firstname" placeholder="First Name" required/>
           </div>
           <div class="input-box">
             <label for="lastName">Last Name</label>
-            <input type="text" id="lastname" />
+            <input type="text" id="lastname" placeholder="Last Name" required/>
           </div>
         </div>
         <div class="input-row">
           <div class="input-box">
             <label for="businessName">Business Name</label>
-            <input type="text" id="businessName" />
+            <input type="text" id="businessName" placeholder="Business Name" required/>
           </div>
           <div class="input-box">
             <label for="phone">Phone</label>
-            <input type="text" id="phone" />
+            <input type="text" id="phone" placeholder="Phone Number" required/>
           </div>
         </div>
         <div class="input-row">
           <div class="input-box full-input">
             <label for="email">Email</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" placeholder="Email Address" required/>
           </div>
         </div>
         <div class="input-row">
           <div class="input-box">
             <label for="password">Password</label>
-            <input type="text" id="password" />
+            <input type="password" id="password" required/>
             <small class="helper-text"
-              >password length must be greater than 8</small
+              >Password length must be greater than 8</small
             >
           </div>
           <div class="input-box">
             <label for="confirmPassword">Confirm Password</label>
-            <input type="text" id="confirmPassword" />
-            <small class="helper-text">password must match</small>
+            <input type="password" id="confirmPassword" required />
+            <small class="helper-text">Password must match</small>
           </div>
         </div>
         <p id="t-and-c">
@@ -87,6 +88,7 @@
       />
     </div>
   </body>
+  </html>
   <!-- <body>
     <div class="row">
       <div class="col-3 first">
@@ -199,4 +201,4 @@
     <sript src="./createAccount.js"></sript>
 
   </body> -->
-</html>
+
