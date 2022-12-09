@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./account.css" />
-    <script src="./createAccount.js"></script>
+    <script src="./login.js"></script>
 
 </head>
 <body id="account">
@@ -25,13 +25,13 @@
       </div>
       <div class="input-row">
         <div class="input-box full-input">
-          <label for="email">Password</label>
+          <label for="password">Password</label>
           <input type="password" id="password" placeholder="Password" minlength="8" name="Password" required/>
         </div>
         </div>
         <div class="input-row">
           <div class="input-box full-input">
-            <input type="submit" value="Log In" />
+          <button id="login" class="log" onclick="Login()">Log In</button>
           </div>
           </div>
           <div class="input-row">

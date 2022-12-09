@@ -1,41 +1,47 @@
 
-function LogIn(){
-  let x = document.getElementById('email').value;
-  let y = document.getElementById('password').value;
-
-  if (x ===""){
-    alert("Email is required");
-    return;
+function signUp(){ 
  
-  }else if (y ===""){
-    alert("Password is required");
-    return;
+let firstname = document.getElementById('firstname').value
+ let   lastName = document.getElementById("lastname").value
+ let   businessname = document.getElementById("businessName").value
+   let phonenumber = document.getElementById("phone").value
+   let emailaddress = document.getElementById("email").value
+  let  firstpassword = document.getElementById("password").value
+  let  secondpassword = document.getElementById("confirmPassword").value
+  let checkedValue = document.querySelector('.terms:checked') === null ? 0 : 1
 
+   
+ if (!firstname ||
+      !lastName ||
+      !businessname ||
+      !phonenumber ||
+      !emailaddress ||
+      !firstpassword ||
+      !secondpassword ){
+  alert('Input is required');
+//  redirect()
+  return
+ } 
+ 
+ if(firstpassword != secondpassword){
+  alert('Password does not match');
+  return
+ }  
+
+ if(checkedValue != 1){
+  alert('Read the terms and conditions')
+  return
   }
-  
+ 
+  // redirect()
+ 
+
+  console.log('dont get here')
 }
 
-function createAccount(){
-  let Password = document.getElementById('password').value;
-  let Confirm = document.getElementById('confirmPassword')
+
+
+
+const redirect = () =>{
+  window.location.href = `./products.html`
 }
-
-
-// function createAccount(){
-//     let account={
-//         firstName : document.getElementById('firstname').value,
-
-//         lastname : document.getElementById('lastname').value,
-//         businessname : document.getElementById('Businessname').value,
-
-
-//         phonenumber : document.getElementById('phone').value,
-
-//         emailaddress : document.getElementById('emailaddress').value,
-
-//         password: document.getElementById('password').value,
-
-//         confirmPassword: document.getElementById('cmfPswd'),
-//     }  
-//     console.log(account);
-//   }
