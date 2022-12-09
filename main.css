@@ -110,7 +110,7 @@ body {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #FFFCFA;/*#3e8e41*/
 }
 
 
@@ -229,9 +229,11 @@ body {
   line-height: 21px;
   height: 21px;
   margin: 10px 0px 10px 0px;
+  
 }
 #last > section > a {
   text-decoration: none;
+  color: #38A0FF;
 }
 #last > section:nth-of-type(1) {
   position: absolute;
