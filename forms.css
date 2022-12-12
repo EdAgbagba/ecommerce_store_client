@@ -44,7 +44,7 @@
   left: 46px;
   top: 22px;
   font-style: normal;
-  font-weight: ;
+  font-weight: 600;
   font-size: 24px;
   line-height: 28px;
   color: #ffffff;
@@ -315,6 +315,7 @@
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
+  display: none;
 }
 #summ-bar {
   position: absolute;
@@ -399,17 +400,16 @@
   font-style: normal;
   display: flex;
   color: #525252;
-  border-top: 1px solid #EDEDED;
+  border-top: 1px solid #ededed;
 }
-#total>*{
-    position: absolute;
-    width: 155px;
-    height: 26px;
-    bottom: 25px;
-    top: 24.5px;
-    font-size: 22px;
-    line-height: 26px;
-    
+#total > * {
+  position: absolute;
+  width: 155px;
+  height: 26px;
+  bottom: 25px;
+  top: 24.5px;
+  font-size: 22px;
+  line-height: 26px;
 }
 #total > div:nth-of-type(1) {
   font-weight: 700;
@@ -418,4 +418,198 @@
   right: 0px;
   font-weight: 600;
   text-align: end;
+}
+#legal-name-label,
+#country-label,
+#industry-label,
+#main-phone-label,
+#other-phone-label,
+#email-label {
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#legal-name-label {
+  position: absolute;
+  width: 106px;
+  height: 19px;
+  left: 44px;
+  top: 105px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+#country-label {
+  width: 77px;
+  height: 19px;
+  left: 44px;
+  top: 218px;
+}
+#industry-label {
+  width: 134px;
+  height: 19px;
+  left: 371px;
+  top: 218px;
+}
+#main-phone-label {
+  width: 106px;
+  height: 19px;
+  left: 44px;
+  top: 335px;
+}
+#other-phone-label {
+  width: 113px;
+  height: 19px;
+  left: 371px;
+  top: 335px;
+}
+#email-label {
+  width: 44px;
+  height: 19px;
+  left: 44px;
+  top: 444px;
+}
+#legal-name {
+  box-sizing: border-box;
+  position: absolute;
+  width: 650px;
+  height: 51px;
+  left: 44px;
+  top: 134px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+}
+#country {
+  box-sizing: border-box;
+  position: absolute;
+  width: 311px;
+  height: 50px;
+  left: 44px;
+  top: 247px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 21px;
+}
+#industry {
+  box-sizing: border-box;
+  position: absolute;
+  width: 323px;
+  height: 50px;
+  left: 371px;
+  top: 247px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 21px;
+}
+
+#main-phone-input,
+#other-phone-input {
+  box-sizing: border-box;
+  position: absolute;
+  height: 50px;
+  top: 364px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  display: flex;
+}
+#main-phone-input {
+  width: 311px;
+  left: 46px;
+}
+#other-phone-input {
+  left: 371px;
+  width: 323px;
+}
+img[alt="ghana"] {
+  width: 24px;
+  height: 18px;
+  padding-right: 5px;
+}
+#main-phone-input > div,
+#other-phone-input > div {
+  display: flex;
+  width: 90px;
+  height: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #959595;
+  justify-content: center;
+  align-items: center;
+  background: #f6f5f5;
+  border-radius: 5px 0px 0px 5px;
+}
+#main-phone-input > input,
+#other-phone-input > input {
+  width: 221px;
+  padding-left: 14px;
+  background: #ffffff;
+  border: 1px solid #ededed;
+  font-size: 16px;
+}
+#email {
+  box-sizing: border-box;
+  position: absolute;
+  width: 650px;
+  height: 51px;
+  left: 44px;
+  top: 473px;
+  border: 1px solid #ededed;
+  font-size: 16px;
+  padding-left: 21px;
+}
+#buttons {
+  position: absolute;
+  width: 100%;
+  top: 560px;
+  bottom: 0px;
+  border-top: 1px solid #ededed;
+}
+#back {
+  position: absolute;
+  width: 67px;
+  height: 23px;
+  left: 383px;
+  top: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #959595;
+}
+#buttons > div:last-of-type {
+  position: absolute;
+  width: 224px;
+  height: 59px;
+  left: 470px;
+  top: 20px;
+
+  border-radius: 10px;
+}
+#buttons > div > button {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer
 }
