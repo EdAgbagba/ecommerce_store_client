@@ -33,10 +33,9 @@ let firstname = document.getElementById('firstname').value
   return
   }
  
-  // redirect()
+  redirect()
  
 
-  console.log('dont get here')
 }
 
 

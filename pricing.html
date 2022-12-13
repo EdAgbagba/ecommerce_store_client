@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newlicense.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div><img src="images/PersolLogo.svg" alt="persol logo"></div>
+        <div><a href="index.html">Overview</a></div>
+        <div><a href="#">Support</a></div>
+        <div class="dropdown" style="color: #185375;">
+            Products
+            <div class="dropdown-content">
+                <a href="sikasem.html">SIKASEM</a>
+                <a href="personax.html">PERSONAX</a>
+            </div>
+        </div>
+        <div><a href="#">Contact</a></div>
+        <div><a href="#">My Account</a></div>
+        <div><button onclick="location.href='index.html'">Logout</button></div>
+    </div>
+  
+    <main>
+        <div>
+            <h2 class="new">New License</h2>
+        </div>
+        <div class="card second">
+            <div id="formorder">
+                
+                <h2>License & Pricing</h2>
+            </div>
+            
+            <form class="form">
+                <label class=" info">Select License Type</label>
+                 <div class="box">
+                    <input hidden type="radio" name="licenceType"  id="lite" value="lite"> <label for="lite"> Lite</label>
+
+       
+                    <input hidden type="radio" name="licenceType"  id="standard" value="standard" >  <label for="standard">
+              Standard
+          </label> 
+    
+           <input hidden type="radio" name="licenceType"  id="enterprise" value="Enterprise" >    <label for="enterprise">
+              Enterprise
+          </label>
+              
+                 </div>
+                <label class=" info">Select the applications you want to purchase</label>
+                <div class="box check">
+                    <div class="purchase"><input type="checkbox" name="choose">Payroll</div>
+                    <div class="purchase"><input type="checkbox" name="choose">HR</div>
+                </div>
+                
+                
+                <div class="industry">
+                <div class="one">
+                    <label class="info">Enter numbers of users</label>
+                    <input type="text" name="Select Payment Cycle"> 
+                    
+                </div>
+                
+                    <div class="one">
+                        <label class="info">Enter number of employees</label>
+                        <input type="text" name="Select Industry">
+                    </div>
+                    <div class="one">
+                        <label class="info">Select Payment Cycle</label>
+                        <input type="text" name="Select Payment Cycle"> 
+                        
+                    </div>
+                    <div class="one">
+                        <label class="info">Select support package</label>
+                        <input type="text" name="Select Payment Cycle"> 
+                        
+                    </div>
+                   
+                </div>
+            </form>
+            <div class="view"><button id="details" onclick="viewDetails()">Provide Company Info></button></div>
+       </div>
+
+        <div id="tableorder">
+
+            <h2 class="summaryorder">Order Summary</h2>
+        </div>
+        <div class="smalltable">
+            <ul class="orderitems">
+                <li>
+                    <p>Personax Lite</p>
+                    <p id="money"  class="price">GHS796.25</p>
+
+                </li>
+            
+                    <li>
+                        <p>Support - Silver package</p>
+                        <p id="money"  class="price">GHS300.00</p>
+    
+                    </li>
+            
+
+            </ul>
+            <hr>
+            <div id="ordertotal">
+                <p class="due">Total Due</p>
+                <p id="money1" class="price">GHS1,096.25</p>
+            </div>
+            </div>
+        
+    </main>
+</body>
+</html>
+
+
+
+<!-- <html>
+<style>
+
+	 input:checked +label {
+    width: 195px;
+    height: 53px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 4px;
+    background-image: url(./images/Rectangle\ 29.png);
+    background-repeat: no-repeat;
+    background-position: 0px 49px;
+    border-bottom: 4px solid  #38A0FF;
+       
+
+}
+
+label  {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label input[type=radio] {
+	display: none !important
+}
+</style>
+<body>
+
+
+<form style=";">
+	<div style=" display: flex; justify-content: space-between; background-color:rgba(246, 245, 245, 0.5); width: 650px;
+height: 63px; border-radius: 5px;">
+      
+                <input hidden type="radio" name="licenceType"  id="lite" value="lite"> <label for="lite"> Lite</label>
+
+       
+                <input hidden type="radio" name="licenceType"  id="standard" value="standard" >  <label for="standard">
+          Standard
+      </label> 
+
+       <input hidden type="radio" name="licenceType"  id="enterprise" value="Enterprise" >    <label for="enterprise">
+          Enterprise
+      </label>
+               
+
+    </div>
+</form>
+
+</body>
+</html> -->

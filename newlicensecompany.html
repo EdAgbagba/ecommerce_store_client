@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newlicense.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div><img src="images/PersolLogo.svg" alt="persol logo"></div>
+        <div><a href="index.html">Overview</a></div>
+        <div><a href="#">Support</a></div>
+        <div class="dropdown" style="color: #185375;">
+            Products
+            <div class="dropdown-content">
+                <a href="sikasem.html">SIKASEM</a>
+                <a href="personax.html">PERSONAX</a>
+            </div>
+        </div>
+        <div><a href="#">Contact</a></div>
+        <div><a href="#">My Account</a></div>
+        <div><button onclick="location.href='index.html'">Logout</button></div>
+    </div>
+  
+    <main>
+        <div>
+            <h2 class="new">New License</h2>
+        </div>
+        <div class="card">
+            <div id="formorder">
+                
+                <h2>Company Info</h2>
+            </div>
+            <div class="form">
+                <div class="legalandemail">
+                    <label>Legal Name</label>
+                    <input type="text" name="Legal Name" id="legalname" >
+                </div>
+                <div class="industry">
+                <div class="one">
+                    <label class="info">Country</label>
+                    <!-- <input type="text" name="Select Payment Cycle">  -->
+                    <select id="Month" name="Month">
+                        <option value="Monthly" selected>Monthly</option>
+                        <option value="Quarterly">Quarterly</option>
+                        <option value="Half-Yearly">Half-Yearly</option>
+                        <option value="Anually">Anually</option>
+                    </select>
+                </div>
+                
+                    <div class="one">
+                        <label class="info">Select Industry</label>
+                        <!-- <input type="text" name="Select Industry"> -->
+                        <select id="industry" name="industry">
+                            <option value="Select Industry Type" selected>Select Industry Type</option>
+                            <option value="advertising-media-communications">Advertising, Media &amp; Communications
+                            </option>
+                            <option value="agriculture-fishing-forestry">Agriculture, Fishing &amp; Forestry</option>
+                            <option value="automotive-aviation">Automotive &amp; Aviation</option>
+                            <option value="banking-finance-insurance">Banking, Finance &amp; Insurance</option>
+                            <option value="construction">Construction</option>
+                            <option value="education">Education</option>
+                            <option value="energy-utilities">Energy &amp; Utilities</option>
+                            <option value="enforcement-security">Enforcement &amp; Security</option>
+                            <option value="entertainment-events-sport">Entertainment, Events &amp; Sport</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="hospitality-hotel">Hospitality &amp; Hotel</option>
+                            <option value="it-telecoms">IT &amp; Telecoms</option>
+                            <option value="law-compliance">Law &amp; Compliance</option>
+                            <option value="manufacturing-warehousing">Manufacturing &amp; Warehousing</option>
+                            <option value="mining-energy-metals">Mining, Energy &amp; Metals</option>
+                            <option value="ngo-npo-charity">NGO, NPO &amp; Charity</option>
+                            <option value="real-estate">Real Estate</option>
+                            <option value="recruitment">Recruitment</option>
+                            <option value="retail-fashion-fmcg">Retail, Fashion &amp; FMCG</option>
+                            <option value="shipping-logistics">Shipping &amp; Logistics</option>
+
+                        </select>
+                    </div>
+
+                    <div class="two">
+                        <label class="info">Main Phone</label>
+                        <input type="tel" placeholder="Enter your phone number" name="main phone" id="mainphone">
+                    </div>
+                    <div class="two">
+                        <label class="info">Other Phone</label>
+                        <input type="tel"  name="Email" id="Email" placeholder="Enter your other phone number">
+                    </div>
+                    </div>
+
+                        <div class="legalandemail">
+                            <label>Email Name</label>
+                            <input type="email" name="Legal Name" id="businessname" >
+                        </div>
+                </div>
+            
+            <div class="view">
+               <a href="./pricing.html"> Back</a>
+                <button id="details" onclick="viewDetails()">Provide Admin User Dretails ></button></div>
+        </div>
+       
+        <div id="tableorder">
+
+            <h2 class="summaryorder">Order Summary</h2>
+        </div>
+        <div class="smalltable">
+            <ul class="orderitems">
+                <li>
+                    <p>Personax Lite</p>
+                    <p id="money"  class="price">GHS796.25</p>
+
+                </li>
+            
+                    <li>
+                        <p>Support - Silver package</p>
+                        <p id="money"  class="price">GHS300.00</p>
+    
+                    </li>
+            
+
+            </ul>
+            <hr>
+            <div id="ordertotal">
+                <p class="due">Total Due</p>
+                <p id="money1" class="price">GHS1,096.25</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
