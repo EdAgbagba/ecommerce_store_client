@@ -28,6 +28,7 @@ let selectedProduct = function(name) {
     circleRight.src = "images/standard.svg"
     mychoice = dim.innerHTML.slice(2);
     
+    
   }
   console.log(mychoice)
   localStorage.setItem("mychoice",(mychoice));
