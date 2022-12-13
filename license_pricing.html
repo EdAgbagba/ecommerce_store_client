@@ -45,7 +45,7 @@
         <div id="bar">
             <div>New License</div>
         </div>
-        <div id="main-form">
+        <form id="main-form">
             <section id="main-form-bar">
                 <div>License & Pricing</div>
             </section>
@@ -77,30 +77,30 @@
             <div id="label4">Enter number of employees *</div>
             <div id="user-num">
                 <input type="text" class="num-inputs" value="" id="num-user" name="num-user"
-                    onkeypress="return isNumber(event)" />
+                    onkeypress="return isNumber(event)" required />
             </div>
             <div id="employee-num">
                 <input type="text" class="num-inputs" value="" id="num-employee" name="num-employee"
-                    onkeypress="return isNumber(event)" />
+                    onkeypress="return isNumber(event)" required />
             </div>
             <div id="label5">Select Payment Cycle *</div>
             <div id="label6">Select support package *</div>
-            <div id="payment-cycle"><select id="cycle" name="cycle" class="selections">
+            <div id="payment-cycle"><select id="cycle" name="cycle" class="selections" required>
                     <option value="monthly" selected>Monthly</option>
                     <option value="quarterly">Quarterly</option>
                     <option value="half year">Half-year</option>
                     <option value="annually">Annually</option>
                 </select></div>
-            <div id="supp-package"><select id="supp" name="supp" class="selections">
+            <div id="supp-package"><select id="supp" name="supp" class="selections" required>
                     <option value="none" selected>None</option>
                     <option value="bronze">Bronze</option>
                     <option value="silver">Silver</option>
                     <option value="gold">Gold</option>
                 </select></div>
             <div id="submit">
-                <div><button>Provide Company info ></button></div>
+                <div><button type="submit">Provide Company info ></button></div>
             </div>
-        </div>
+        </form>
         <div id="summary">
             <div id="summ-bar">
                 <div>Order Summary</div>

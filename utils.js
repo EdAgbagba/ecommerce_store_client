@@ -15,7 +15,12 @@ let selectedProduct = function(name) {
      else document.getElementById("standard").classList.add("dimmer");
      document.getElementById("circle-left").style.background = colorLite_Left;
     circleRight.src = "images/lite.svg"
+    document.getElementById("lite-text").classList.remove("switch")
+    document.getElementById("lite-exp").classList.remove("switch")
+    document.getElementById("standard-text").classList.add("switch")
+    document.getElementById("standard-exp").classList.add("switch")
     mychoice = dim.innerHTML.slice(2);
+    //document.getElementById("circle-left").style.
    
   } 
   else if (name === "standard") {
@@ -26,8 +31,12 @@ let selectedProduct = function(name) {
     } else document.getElementById("lite").classList.add("dimmer");
     document.getElementById("circle-left").style.background = colorStandard_left;
     circleRight.src = "images/standard.svg"
+    document.getElementById("lite-text").classList.add("switch")
+    document.getElementById("lite-exp").classList.add("switch")
+    document.getElementById("standard-text").classList.remove("switch")
+    document.getElementById("standard-exp").classList.remove("switch")
     mychoice = dim.innerHTML.slice(2);
-    
+
     
   }
   console.log(mychoice)
