@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newlicense.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div><img src="images/PersolLogo.svg" alt="persol logo"></div>
+        <div><a href="index.html">Overview</a></div>
+        <div><a href="#">Support</a></div>
+        <div class="dropdown" style="color: #185375;">
+            Products
+            <div class="dropdown-content">
+                <a href="sikasem.html">SIKASEM</a>
+                <a href="personax.html">PERSONAX</a>
+            </div>
+        </div>
+        <div><a href="#">Contact</a></div>
+        <div><a href="#">My Account</a></div>
+        <div><button onclick="location.href='index.html'">Logout</button></div>
+    </div>
+  
+    <main>
+        <div>
+            <h2 class="new">New License</h2>
+        </div>
+        <div class="card second">
+            <div id="formorder">
+                
+                <h2>Primary / Admin User</h2>
+            </div>
+            <div class="form">
+                
+                <div class="industry">
+                <div class="one">
+                    <label class="info">Username</label>
+                    <input type="text" name="Select Payment Cycle"> 
+                    
+                </div>
+                
+                    <div class="one">
+                        <label class="info">Email</label>
+                        <input type="text" name="Select Industry">
+                    </div>
+                    <div class="one">
+                        <label class="info">First Name</label>
+                        <input type="text" name="Select Payment Cycle"> 
+                        
+                    </div>
+                    <div class="one">
+                        <label class="info">Last Name</label>
+                        <input type="text" name="Select Payment Cycle"> 
+                        
+                    </div>
+                    <div class="two">
+                        <label class="info">Phone</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                   
+                   
+                </div>
+            </div>
+            <div class="view">
+                <a href="./pricing.html"> Back</a>
+                <button id="details" onclick="viewDetails()">View Full Order Details ></button></div>
+       </div>
+       
+        <div id="tableorder">
+
+            <h2 class="summaryorder">Order Summary</h2>
+        </div>
+        <div class="smalltable">
+            <ul class="orderitems">
+                <li>
+                    <p>Personax Lite</p>
+                    <p id="money"  class="price">GHS796.25</p>
+
+                </li>
+            
+                    <li>
+                        <p>Support - Silver package</p>
+                        <p id="money"  class="price">GHS300.00</p>
+    
+                    </li>
+            
+
+            </ul>
+            <hr>
+            <div id="ordertotal">
+                <p class="due">Total Due</p>
+                <p id="money1" class="price">GHS1,096.25</p>
+            </div>
+            </div>
+        
+    </main>
+</body>
+</html>
