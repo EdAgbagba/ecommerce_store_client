@@ -52,14 +52,15 @@
             <div id="label1">
                 Select License Type *
             </div>
+            <!-- id="selected-type" -->
             <section id="license-type">
-                <div class="selected-type">
-                    <div style="color: #000;">Lite</div>
+                <div class="lite-type" onclick="selectedLicense('lite')">
+                    <div>Lite</div>
                 </div>
-                <div>
+                <div class="standard-type" onclick="selectedLicense('standard')">
                     <div>Standard</div>
                 </div>
-                <div>
+                <div class="enterprise-type" onclick="selectedLicense('enterprise')">
                     <div>Enterprise</div>
                 </div>
             </section>
@@ -98,7 +99,7 @@
                     <option value="gold">Gold</option>
                 </select></div>
             <div id="submit">
-                <div><button type="submit">Provide Company info ></button></div>
+                <div><button type="submit" >Provide Company info ></button></div>
             </div>
         </form>
         <div id="summary">
@@ -174,6 +175,27 @@
                 return false;
             }
             return true;
+        }
+        function selectedLicense(sel) {
+            let id = "selected-type"
+            let lite = document.getElementsByClassName("lite-type")[0]
+            let stan = document.getElementsByClassName("standard-type")[0]
+            let ent = document.getElementsByClassName("enterprise-type")[0]
+            if (sel === "lite") {
+                lite.setAttribute("id", id);
+                stan.removeAttribute("id",id)
+                ent.removeAttribute("id",id)
+            }
+            else if (sel === "standard") {
+                stan.setAttribute("id", id);
+                lite.removeAttribute("id",id)
+                ent.removeAttribute("id",id)
+            }
+            else if (sel === "enterprise") {
+                ent.setAttribute("id", id);
+                stan.removeAttribute("id",id)
+                lite.removeAttribute("id",id)
+            }
         }
     </script>
 </body>
