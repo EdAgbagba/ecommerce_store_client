@@ -1,6 +1,7 @@
 let selectedProduct = function(name) {
   let mychoice;
   let dim;
+  let price;
   let colorLite_Left = "#11c3022b"
   let colorStandard_left = "#001e8a2b"
   let circleRight = document.getElementById("right-circle")
@@ -19,7 +20,8 @@ let selectedProduct = function(name) {
     document.getElementById("lite-exp").classList.remove("switch")
     document.getElementById("standard-text").classList.add("switch")
     document.getElementById("standard-exp").classList.add("switch")
-    mychoice = dim.innerHTML.slice(2);
+    mychoice = "Lite";
+    localStorage.setItem("price","199.00")
     //document.getElementById("circle-left").style.
    
   } 
@@ -35,7 +37,8 @@ let selectedProduct = function(name) {
     document.getElementById("lite-exp").classList.add("switch")
     document.getElementById("standard-text").classList.remove("switch")
     document.getElementById("standard-exp").classList.remove("switch")
-    mychoice = dim.innerHTML.slice(2);
+    mychoice = "Standard";
+    localStorage.setItem("price","220.00")
 
     
   }
@@ -43,9 +46,7 @@ let selectedProduct = function(name) {
   localStorage.setItem("mychoice",(mychoice));
 }
 personaxSelected = function(){
-  localStorage.setItem("toBuy","PersonaxLogo.svg");
-  location.replace("./products.html")
-  localStorage.setItem("price","GH&#8373;199")
+  location.replace("./license_pricing.html")
 }
 sikasemSelected = function(){
   localStorage.setItem("toBuy","SikasemLogo.svg");

@@ -77,11 +77,11 @@
             <div id="label3">Enter number of users *</div>
             <div id="label4">Enter number of employees *</div>
             <div id="user-num">
-                <input type="text" class="num-inputs" value="" id="num-user" name="num-user"
-                    onkeypress="return isNumber(event)" required />
+                <input type="text" class="num-inputs" id="num-user" name="num-user" onkeypress="return isNumber(event)"
+                    required />
             </div>
             <div id="employee-num">
-                <input type="text" class="num-inputs" value="" id="num-employee" name="num-employee"
+                <input type="text" class="num-inputs" id="num-employee" name="num-employee"
                     onkeypress="return isNumber(event)" required />
             </div>
             <div id="label5">Select Payment Cycle *</div>
@@ -93,13 +93,13 @@
                     <option value="annually">Annually</option>
                 </select></div>
             <div id="supp-package"><select id="supp" name="supp" class="selections" required>
-                    <option value="none" selected>None</option>
-                    <option value="bronze">Bronze</option>
-                    <option value="silver">Silver</option>
-                    <option value="gold">Gold</option>
+                    <option value="None" selected>None</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
                 </select></div>
             <div id="submit">
-                <div><button type="submit" >Provide Company info ></button></div>
+                <div><button onclick=formDetails()>Provide Company info ></button></div> <!--type="submit" -->
             </div>
         </form>
         <div id="summary">
@@ -107,16 +107,16 @@
                 <div>Order Summary</div>
             </div>
             <div id="prod-selected">
-                <div>Personax Lite</div>
-                <div>GHS796.25</div>
+                <div id="personax-type"></div><!--Personax Lite-->
+                <div id="personax-price"></div><!-- 796.25 -->
             </div>
             <div id="package-selected">
-                <div>Support - Silver Package</div>
-                <div>GHS300.00</div>
+                <div id="personax-support-package"></div><!--Support - Silver Package-->
+                <div id="personax-support-price">GH&#8373;0.00</div><!-- 300.00 -->
             </div>
             <div id="total">
                 <div>Total Due</div>
-                <div>GHS1,096.25</div>
+                <div id="total-cost">GH&#8373;0.00</div><!-- 1,096.25 -->
             </div>
         </div>
         <div id="footer">
@@ -168,6 +168,19 @@
     </div>
 
     <script>
+        let litePrice = "199.00"
+        let standardPrice = "220.00"
+        let bronzePrice = "200.00"
+        let silverPrice = "300.00"
+        let goldPrice = "500.00"
+        window.addEventListener("DOMContentLoaded", function (e) {
+            let mychoice = localStorage.getItem("mychoice")
+            document.getElementsByClassName(mychoice.toLowerCase() + "-type")[0].setAttribute("id", "selected-type")
+            let price = localStorage.getItem("price")
+            document.getElementById("personax-type").innerHTML = "Personax " + mychoice
+            
+            document.getElementById("personax-price").innerHTML = "GH&#8373;"+price
+        })
         function isNumber(evt) {
             evt = (evt) ? evt : window.event;
             var charCode = (evt.which) ? evt.which : evt.keyCode;
@@ -183,20 +196,50 @@
             let ent = document.getElementsByClassName("enterprise-type")[0]
             if (sel === "lite") {
                 lite.setAttribute("id", id);
-                stan.removeAttribute("id",id)
-                ent.removeAttribute("id",id)
+                stan.removeAttribute("id", id)
+                ent.removeAttribute("id", id)
+                document.getElementById("personax-type").innerHTML = "Personax Lite"
+                document.getElementById("personax-price").innerHTML = "GH&#8373;"+litePrice
             }
             else if (sel === "standard") {
                 stan.setAttribute("id", id);
-                lite.removeAttribute("id",id)
-                ent.removeAttribute("id",id)
+                lite.removeAttribute("id", id)
+                ent.removeAttribute("id", id)
+                document.getElementById("personax-type").innerHTML = "Personax Standard"
+                document.getElementById("personax-price").innerHTML = "GH&#8373;"+standardPrice
             }
-            else if (sel === "enterprise") {
-                ent.setAttribute("id", id);
-                stan.removeAttribute("id",id)
-                lite.removeAttribute("id",id)
-            }
+            // else if (sel === "enterprise") {
+            //     ent.setAttribute("id", id);
+            //     stan.removeAttribute("id", id)
+            //     lite.removeAttribute("id", id)
+            // }
         }
+        formDetails = function () {
+            let filledLicenseForm = {
+                type: document.getElementById("selected-type").className,
+                payroll: "false",
+                hr: "false",
+                userNumber: document.getElementById("num-user").value,
+                employeeNumber: document.getElementById("num-employee").value,
+                cycle: document.getElementById("cycle").value,
+                support: document.getElementById("supp").value
+
+            }
+            if (document.getElementsByName("application")[0].checked || document.getElementsByName("application")[1].checked) {
+                //alert("checked");
+                filledLicenseForm.payroll = document.getElementsByName("application")[0].checked
+                filledLicenseForm.hr = document.getElementsByName("application")[1].checked
+            } else {
+                document.getElementById("app-to-buy").style.border = "solid 1px black"
+                alert("Please Select At Least One Application");
+            }
+            localStorage.setItem("filledLicenseForm", JSON.stringify(filledLicenseForm))
+            console.log(JSON.parse(localStorage.getItem("filledLicenseForm")))
+        }
+        
+        let intervalId = setInterval(function () {
+            document.getElementById("personax-support-package").innerHTML = "Support Package - " + document.getElementById("supp").value
+        }, 50);
     </script>
 </body>
 
