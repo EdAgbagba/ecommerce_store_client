@@ -148,7 +148,7 @@
     <script>
         let filledLicenseForm = JSON.parse(localStorage.getItem("filledLicenseForm"))
         console.log(JSON.parse(localStorage.getItem("filledLicenseForm")))
-        document.getElementById("type").innerHTML = filledLicenseForm.type
+        document.getElementById("type").innerHTML = localStorage.getItem("mychoice1")
         // document.getElementById("").innerHTML = filledLicenseForm.hr
         // document.getElementById("").innerHTML = filledLicenseForm.payroll
         document.getElementById("support-package").innerHTML = filledLicenseForm.support

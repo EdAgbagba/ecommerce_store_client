@@ -217,6 +217,7 @@
                 ent.removeAttribute("id", id)
                 document.getElementById("personax-type").innerHTML = "Personax Lite"
                 document.getElementById("personax-price").innerHTML = "GH&#8373;" + litePrice
+                localStorage.setItem("mychoice1","Lite")
 
                 calc()
             }
@@ -226,7 +227,7 @@
                 ent.removeAttribute("id", id)
                 document.getElementById("personax-type").innerHTML = "Personax Standard"
                 document.getElementById("personax-price").innerHTML = "GH&#8373;" + standardPrice
-
+                localStorage.setItem("mychoice1","Standard")
                 calc()
             }
             // else if (sel === "enterprise") {
