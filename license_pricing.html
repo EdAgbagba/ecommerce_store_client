@@ -86,7 +86,7 @@
             </div>
             <div id="label5">Select Payment Cycle *</div>
             <div id="label6">Select support package *</div>
-            <div id="payment-cycle"><select id="cycle" name="cycle" class="selections" required>
+            <div id="payment-cycle"><select id="cycle" name="cycle" class="selections" required onclick="calc()">
                     <option value="monthly" selected>Monthly</option>
                     <option value="quarterly">Quarterly</option>
                     <option value="half year">Half-year</option>
@@ -176,8 +176,17 @@
         let silverPrice = "300.00"
         let goldPrice = "500.00"
         function calc() {
-            document.getElementById("total-cost").innerHTML = "GH&#8373;" + (parseInt(document.getElementById("personax-price").innerHTML.slice(3)) + parseInt(document.getElementById("personax-support-price").innerHTML.slice(3))).toString() + ".00"
-            
+            let calc1 = (parseInt(document.getElementById("personax-price").innerHTML.slice(3)) + parseInt(document.getElementById("personax-support-price").innerHTML.slice(3)))
+            let cycle = document.getElementById("cycle").value
+
+            if (cycle === "quarterly") {
+                 document.getElementById("total-cost").innerHTML = "GH&#8373;" +  (calc1 * 3).toString()+ ".00"
+
+            } else if (cycle === "half year") {
+                 document.getElementById("total-cost").innerHTML = "GH&#8373;" +  (calc1 * 6).toString()+ ".00"
+            } else if (cycle === "annually") {
+                 document.getElementById("total-cost").innerHTML = "GH&#8373;" +  (calc1 * 12).toString()+ ".00"
+            } else  document.getElementById("total-cost").innerHTML = "GH&#8373;" +  (calc1).toString()+ ".00"
         }
         window.addEventListener("DOMContentLoaded", function (e) {
             let mychoice = localStorage.getItem("mychoice")
@@ -228,12 +237,12 @@
         }
         formDetails = function () {
             let filledLicenseForm = {
-                type: document.getElementById("selected-type").className,
+                type: document.getElementById("selected-type").className.slice(0,1).toUpperCase() + document.getElementById("selected-type").className.slice(1),
                 payroll: false,
                 hr: false,
                 userNumber: document.getElementById("num-user").value,
                 employeeNumber: document.getElementById("num-employee").value,
-                cycle: document.getElementById("cycle").value,
+                cycle: document.getElementById("cycle").value.slice(0,1).toUpperCase() + document.getElementById("cycle").value.slice(1) ,
                 support: document.getElementById("supp").value,
                 totalAmountDue: document.getElementById("total-cost").innerHTML
 

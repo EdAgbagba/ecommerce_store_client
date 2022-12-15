@@ -27,7 +27,6 @@
   background: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  
 }
 #main-form-bar {
   position: absolute;
@@ -50,73 +49,49 @@
   line-height: 28px;
   color: #ffffff;
 }
-#label1 {
-  position: absolute;
-  width: 171px;
-  height: 19px;
-  left: 44px;
-  top: 105px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-#label2 {
-  position: absolute;
-  width: 372px;
-  height: 19px;
-  left: 44px;
-  top: 222px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-#label3 {
-  position: absolute;
-  width: 200px;
-  height: 19px;
-  left: 44px;
-  top: 339px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-#label4 {
-  position: absolute;
-  width: 233px;
-  height: 19px;
-  left: 371px;
-  top: 339px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-#label5 {
-  position: absolute;
-  width: 186px;
-  height: 19px;
-  left: 44px;
-  top: 456px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
+#label1,
+#label2,
+#label3,
+#label4,
+#label5,
 #label6 {
   position: absolute;
-  width: 200px;
-  height: 19px;
-  left: 371px;
-  top: 456px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  height: 19px;
 }
-
+#label1 {
+  width: 171px;
+  left: 44px;
+  top: 105px;
+}
+#label2 {
+  width: 372px;
+  left: 44px;
+  top: 222px;
+}
+#label3 {
+  width: 200px;
+  left: 44px;
+  top: 339px;
+}
+#label4 {
+  width: 233px;
+  left: 371px;
+  top: 339px;
+}
+#label5 {
+  width: 186px;
+  left: 44px;
+  top: 456px;
+}
+#label6 {
+  width: 200px;
+  left: 371px;
+  top: 456px;
+}
 #submit {
   position: absolute;
   width: 100%;
@@ -143,7 +118,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
-  
+
   cursor: pointer;
 }
 #license-type > div > div:hover {
@@ -320,7 +295,6 @@
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  
 }
 #summ-bar {
   position: absolute;
@@ -436,7 +410,6 @@
   font-size: 16px;
   line-height: 19px;
 }
-
 #legal-name-label {
   position: absolute;
   width: 106px;
@@ -518,7 +491,6 @@
   line-height: 21px;
   padding-left: 21px;
 }
-
 #main-phone-input,
 #other-phone-input {
   box-sizing: border-box;
@@ -670,10 +642,12 @@ img[alt="ghana"] {
 }
 .right-side {
   left: 442px;
+  
 }
 #heading {
   margin-top: 0px !important;
   background: #dcdcdc !important;
+  border-radius: 7px 7px 0 0;
 }
 #heading > div {
   font-weight: 600;
@@ -708,7 +682,6 @@ img[alt="ghana"] {
   line-height: 19px;
   cursor: pointer;
 }
-
 #item-desc > a {
   position: absolute;
   width: 67px;
