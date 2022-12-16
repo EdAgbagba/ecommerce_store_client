@@ -45,21 +45,22 @@
         <div id="bar">
             <div>New License</div>
         </div>
-        <div id="main-form">
+        <form id="main-form">
             <section id="main-form-bar">
                 <div>License & Pricing</div>
             </section>
             <div id="label1">
                 Select License Type *
             </div>
+            <!-- id="selected-type" -->
             <section id="license-type">
-                <div class="selected-type">
-                    <div style="color: #000;">Lite</div>
+                <div class="lite-type" onclick="selectedLicense('lite')">
+                    <div>Lite</div>
                 </div>
-                <div>
+                <div class="standard-type" onclick="selectedLicense('standard')">
                     <div>Standard</div>
                 </div>
-                <div>
+                <div class="enterprise-type" onclick="selectedLicense('enterprise')">
                     <div>Enterprise</div>
                 </div>
             </section>
@@ -76,69 +77,70 @@
             <div id="label3">Enter number of users *</div>
             <div id="label4">Enter number of employees *</div>
             <div id="user-num">
-                <input type="text" class="num-inputs" value="" id="num-user" name="num-user"
-                    onkeypress="return isNumber(event)" />
+                <input type="text" class="num-inputs" id="num-user" name="num-user" onkeypress="return isNumber(event)"
+                    required />
             </div>
             <div id="employee-num">
-                <input type="text" class="num-inputs" value="" id="num-employee" name="num-employee"
-                    onkeypress="return isNumber(event)" />
+                <input type="text" class="num-inputs" id="num-employee" name="num-employee"
+                    onkeypress="return isNumber(event)"  required />
             </div>
             <div id="label5">Select Payment Cycle *</div>
             <div id="label6">Select support package *</div>
-            <div id="payment-cycle"><select id="cycle" name="cycle" class="selections">
+            <div id="payment-cycle"><select id="cycle" name="cycle" class="selections" required onclick="calc()">
                     <option value="monthly" selected>Monthly</option>
                     <option value="quarterly">Quarterly</option>
                     <option value="half year">Half-year</option>
                     <option value="annually">Annually</option>
                 </select></div>
-            <div id="supp-package"><select id="supp" name="supp" class="selections">
-                    <option value="none" selected>None</option>
-                    <option value="bronze">Bronze</option>
-                    <option value="silver">Silver</option>
-                    <option value="gold">Gold</option>
+            <div id="supp-package" onclick="add()"><select id="supp" name="supp" class="selections" required>
+                    <option value="None" selected>None</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
                 </select></div>
             <div id="submit">
-                <div><button><a href="./newlicensecompany copy.html">Provide Company info ></a></button></div>
+                <div><button onclick=formDetails()>Provide Company info ></button></div> <!--type="submit" -->
             </div>
-        </div>
+        </form>
         <div id="summary">
             <div id="summ-bar">
                 <div>Order Summary</div>
             </div>
             <div id="prod-selected">
-                <div>Personax Lite</div>
-                <div>GHS796.25</div>
+                <div id="personax-type"></div><!--Personax Lite-->
+                <div id="personax-price"></div><!-- 796.25 -->
             </div>
             <div id="package-selected">
-                <div>Support - Silver Package</div>
-                <div>GHS300.00</div>
+                <div id="personax-support-package">Support Package - None</div><!--Support - Silver Package-->
+                <div id="personax-support-price">GH&#8373;0.00</div><!-- 300.00 -->
             </div>
             <div id="total">
                 <div>Total Due</div>
-                <div>GHS1,096.25</div>
+                <div id="total-cost">GH&#8373;0.00</div><!-- 1,096.25 -->
             </div>
         </div>
         <div id="footer">
             <div class="columns">
                 <div><b>Learn About our Products</b></div>
-                <div><a href="#">What is Personax?</a></div>
-                <div><a href="#">What is Sikasem</a></div>
-                <div><a href="#">What's New</a></div>
-                <div><a href="#">Blogs</a></div>
+                <div><a href="#p">What is Personax?</a></div>
+                <div><a href="#s">What is Sikasem</a></div>
+                <div><a href="">What's New</a></div>
+                <div><a href="">Blogs</a></div>
                 <section>
-                    <div><b>Language</b></div>
-                    <div>English</div>
+                    <div>Language</div>
+                    <div><b>English</b></div>
                     <div>Fran&ccedil;ais</div>
                 </section>
             </div>
             <div class="columns">
                 <div><b>Help</b></div>
-                <div><a href="#">Contact Us</a></div>
+                <div><a href="contact.html">Contact Us</a></div>
                 <div><a href="#">Knowledge Center</a></div>
-                <div><a href="#">Persol Store Support Overview</a></div>
+                <div><a href="">Persol store </a><a href="support.html">Support </a><a href="index.html">Overview</a>
+                </div>
             </div>
             <div class="columns">
-                <div><button>Create a <b>PERSOL</b> Account</button></div>
+                <div><button onclick="location.href='newaccount.html'">Create a <b>PERSOL</b> Account</button></div>
                 <div style="padding: 30px;">
                     <div style="background-color: white; width: 30px; height: 30px;"><a href="#"><img
                                 src="images/twitter.svg" alt="twitter" width="14.52" height="12"
@@ -147,7 +149,8 @@
                     <a href="#"><img src="images/linkedin.svg" alt="linkedin" width="30" height="30"></a>
                     <a href="#"><img src="images/instagram.svg" alt="instagram" width="30" height="30"></a>
                     <a href="#"><img src="images/google.svg" alt="google" width="30" height="30"></a>
-                    <a href="#"><img src="images/youtube.svg" alt="youtube" width="30" height="30"></a>
+                    <a href="#" style="background-color: black;"><img src="images/youtube.svg" alt="youtube" width="30"
+                            height="30"></a>
                 </div>
             </div>
         </div>
@@ -167,6 +170,34 @@
     </div>
 
     <script>
+        let litePrice = "199.00"
+        let standardPrice = "220.00"
+        let bronzePrice = "200.00"
+        let silverPrice = "300.00"
+        let goldPrice = "500.00"
+        function calc() {
+            let calc1 = (parseInt(document.getElementById("personax-price").innerHTML.slice(3)) + parseInt(document.getElementById("personax-support-price").innerHTML.slice(3)))
+            let cycle = document.getElementById("cycle").value
+
+            if (cycle === "quarterly") {
+                 document.getElementById("total-cost").innerHTML = "GH&#8373;" +  (calc1 * 3).toString()+ ".00"
+
+            } else if (cycle === "half year") {
+                 document.getElementById("total-cost").innerHTML = "GH&#8373;" +  (calc1 * 6).toString()+ ".00"
+            } else if (cycle === "annually") {
+                 document.getElementById("total-cost").innerHTML = "GH&#8373;" +  (calc1 * 12).toString()+ ".00"
+            } else  document.getElementById("total-cost").innerHTML = "GH&#8373;" +  (calc1).toString()+ ".00"
+        }
+        window.addEventListener("DOMContentLoaded", function (e) {
+            let mychoice = localStorage.getItem("mychoice")
+            document.getElementsByClassName(mychoice.toLowerCase() + "-type")[0].setAttribute("id", "selected-type")
+            let price = localStorage.getItem("price")
+            document.getElementById("personax-type").innerHTML = "Personax " + mychoice
+
+            document.getElementById("personax-price").innerHTML = "GH&#8373;" + price
+
+            calc()
+        })
         function isNumber(evt) {
             evt = (evt) ? evt : window.event;
             var charCode = (evt.which) ? evt.which : evt.keyCode;
@@ -174,6 +205,77 @@
                 return false;
             }
             return true;
+        }
+        function selectedLicense(sel) {
+            let id = "selected-type"
+            let lite = document.getElementsByClassName("lite-type")[0]
+            let stan = document.getElementsByClassName("standard-type")[0]
+            let ent = document.getElementsByClassName("enterprise-type")[0]
+            if (sel === "lite") {
+                lite.setAttribute("id", id);
+                stan.removeAttribute("id", id)
+                ent.removeAttribute("id", id)
+                document.getElementById("personax-type").innerHTML = "Personax Lite"
+                document.getElementById("personax-price").innerHTML = "GH&#8373;" + litePrice
+                localStorage.setItem("mychoice1","Lite")
+
+                calc()
+            }
+            else if (sel === "standard") {
+                stan.setAttribute("id", id);
+                lite.removeAttribute("id", id)
+                ent.removeAttribute("id", id)
+                document.getElementById("personax-type").innerHTML = "Personax Standard"
+                document.getElementById("personax-price").innerHTML = "GH&#8373;" + standardPrice
+                localStorage.setItem("mychoice1","Standard")
+                calc()
+            }
+            // else if (sel === "enterprise") {
+            //     ent.setAttribute("id", id);
+            //     stan.removeAttribute("id", id)
+            //     lite.removeAttribute("id", id)
+            // }
+        }
+        formDetails = function () {
+            let filledLicenseForm = {
+                type: document.getElementById("selected-type").className.slice(0,1).toUpperCase() + document.getElementById("selected-type").className.slice(1),
+                payroll: false,
+                hr: false,
+                userNumber: document.getElementById("num-user").value,
+                employeeNumber: document.getElementById("num-employee").value,
+                cycle: document.getElementById("cycle").value.slice(0,1).toUpperCase() + document.getElementById("cycle").value.slice(1) ,
+                support: document.getElementById("supp").value,
+                totalAmountDue: document.getElementById("total-cost").innerHTML
+                
+            }
+            if (document.getElementsByName("application")[0].checked || document.getElementsByName("application")[1].checked) {
+                //alert("checked");
+                filledLicenseForm.payroll = document.getElementsByName("application")[0].checked
+                filledLicenseForm.hr = document.getElementsByName("application")[1].checked
+                
+            } else {
+                //document.getElementById("app-to-buy").style.border = "solid 1px black"
+                alert("Please Select At Least One Application");
+            }
+            localStorage.setItem("filledLicenseForm", JSON.stringify(filledLicenseForm))
+            console.log(JSON.parse(localStorage.getItem("filledLicenseForm")))
+            
+            window.location.replace("./newlicensecompany.html")
+            
+        }
+
+        //let intervalId = setInterval(function () {}, 50);
+        function add() {
+            document.getElementById("personax-support-package").innerHTML = "Support Package - " + document.getElementById("supp").value
+            if (document.getElementById("supp").value === "Bronze") {
+                document.getElementById("personax-support-price").innerHTML = "GH&#8373;" + bronzePrice;
+            } else if (document.getElementById("supp").value === "Silver") {
+                document.getElementById("personax-support-price").innerHTML = "GH&#8373;" + silverPrice;
+            } else if (document.getElementById("supp").value === "Gold") {
+                document.getElementById("personax-support-price").innerHTML = "GH&#8373;" + goldPrice;
+            } else document.getElementById("personax-support-price").innerHTML = "GH&#8373;0.00"
+
+            calc()
         }
     </script>
 </body>

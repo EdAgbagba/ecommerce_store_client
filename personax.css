@@ -23,14 +23,14 @@
   }
   #main-personax > div:nth-of-type(3) {
     position: absolute;
-    width: 456px;
+    width: 529px;
     height: 19px;
     left: 19.94%;
     top: 523px;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 18px;
+    line-height: 21px;
     color: #626262;
   }
   #main-personax > div:nth-of-type(4) {
@@ -94,14 +94,14 @@
   }
   #main-personax > div:nth-of-type(8) {
     position: absolute;
-    width: 546px;
-    height: 38px;
-    left: 34.72%;
+    width: 637px;
+    height: 42px;
+    left: 29.391%;
     top: 713px;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 18px;
+    line-height: 21px;
     text-align: center;
     color: #626262;
   }
@@ -491,6 +491,10 @@
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+    
+  }
+  #offers>section>div>div>a{
+    text-decoration: none;
     color: #38A0FF;
   }
   #lite-title{
@@ -562,3 +566,31 @@
     line-height: 22px;
     color: #5E5E5E;
   }
+  #standard-text{
+    position: absolute;
+    width: 453px;
+    height: 76px;
+    left: 19.94%;
+    top: 382px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #626262;
+  }
+  #standard-exp{
+    position: absolute;
+    width: 530px;
+    height: 19px;
+    left: 19.94%;
+    top: 505px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #626262;
+  }
+  .switch{
+    display: none;
+  }
+  
