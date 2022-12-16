@@ -47,10 +47,10 @@
                 <img id="sikasem_logo" class="toBuy" src="" alt="">
                 <div><p class="orderForm">Order form</p></div>
             </div>
-            <div class="form">
+            <form class="form">
                 <div class="legalandemail">
                     <label>Business Name</label>
-                    <input type="text" name="Business Name" id="businessname" >
+                    <input type="text" name="Business Name" id="businessname" required>
                 </div>
                 <div class="industry">
                     <div class="one">
@@ -101,8 +101,9 @@
                         <input type="email" name="Email" id="Email" required>
                     </div>
                 </div>
-            </div>
-            <div class="view"><button id="details" onclick="viewDetails()">View Full Order Details</button></div>
+                <div class="view"><button id="details" onclick="viewDetails()">View Full Order Details</button></div>
+            </form>
+            
         </div>
         <div id="smallcard">
 

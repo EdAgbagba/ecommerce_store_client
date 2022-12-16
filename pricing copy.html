@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="newlicense copy.css">
     <link rel="stylesheet" href="main.css">
-    <title>Primary and admin user</title>
+    <title>License and pricing</title>
 </head>
 <body>
     <div id="header">
@@ -27,70 +24,77 @@
         <div><a href="#">My Account</a></div>
         <div><button onclick="location.href='index.html'">Logout</button></div>
     </div>
-     <main>
-   <div class="newlicense"><p>New License</p></div>
-   <div class="card">
-   <div class="bigcard">
-    <div class="prime" ><p>Primary / Admin User</p></div>
-    <form class="form2" action="./order_page.html">
-                
-        <div class="industry">
-
-        <div class="one">
-            <label class="info">Username</label>
-            <input type="text" name="username" required> 
-            
-        </div>
-        
-            <div class="two">
-                <label class="info">Email</label>
-                <input type="text" name="Select Industry" required>
-            </div>
-            <div class="one">
-                <label class="info">First Name</label>
-                <input type="text" name="Select Payment Cycle" required> 
-                
-            </div>
-            <div class="two">
-                <label class="info">Last Name</label>
-                <input type="text" name="Select Payment Cycle" required> 
-                
-            </div>
-            <div class="three">
-                <label class="info">Phone</label>
-                <input type="tel" name="phone" id="phone" required>
-            </div>
-           
-           
-        </div>
-        <hr>
-        <div class="view1">
-            <a href="./newlicensecompany copy.html">< Back</a>
-            <button type="submit" id="details" class="userInfo">View Full Order Details ></button>
-       </div>
-    </form>
   
-   </div>  
-   <div class="smallcard">
-    <div class="summary"><p>Order Summary</p></div>
-    <div class="order">
-        <div class="personaxlite">
-            <p>Personax Lite</p>
-            <p>GHS796.25</p>
-        </div>
-        <div class="silver">
-            <p>Support-Silver package</p>
-            <p>GHS300.00</p>
-        </div>
-       <hr class="orderline">
-        <div class="due">
-            <p>Total Due</p>
-            <p>GHS1,096.25</p>
-        </div>
-    </div>
-    </div>
-   </div>  
-   <!-- </div> -->
+    <main>
+        <div class="newlicense"><p>New License</p></div>
+        <div class="card">
+            <div class="bigcard">
+             <div class="prime" ><p>Primary / Admin User</p></div>
+             <form class="form">
+                <label class=" info">Select License Type</label>
+                <div class="box">
+                   <input hidden type="radio" name="licenceType"  id="lite" value="lite">  Lite
+
+      
+                   <input hidden type="radio" name="licenceType"  id="standard" value="standard" >  Standard
+       
+   
+          <input hidden type="radio" name="licenceType"  id="enterprise" value="Enterprise" >   
+             Enterprise
+     
+             
+                </div>
+               <label class=" info">Select the applications you want to purchase</label>
+               <div class="box check">
+                   <div class="purchase"><input type="checkbox" name="choose">Payroll</div>
+                   <div class="purchase"><input type="checkbox" name="choose">HR</div>
+               </div>
+               <div class="industry">
+                <div class="one">
+                    <label class="info">Enter numbers of users</label>
+                    <input type="text" name="Select Payment Cycle"> 
+                    
+                </div>
+                
+                    <div class="two">
+                        <label class="info">Enter number of employees</label>
+                        <input type="text" name="Select Industry">
+                    </div>
+                    <div class="one">
+                        <label class="info">Select Payment Cycle</label>
+                        <input type="text" name="Select Payment Cycle"> 
+                        
+                    </div>
+                    <div class="two">
+                        <label class="info">Select support package</label>
+                        <input type="text" name="Select Payment Cycle"> 
+                        
+                    </div>
+                   
+                </div>
+             </form>
+             <div class="view"><button id="details" onclick="viewDetails()">Provide Company Info></button></div>
+            </div>
+           
+            <div class="smallcard">
+                <div class="summary"><p>Order Summary</p></div>
+                <div>
+                    <p>Personax Lite</p>
+                    <p>GHS796.25</p>
+                </div>
+                <div>
+                    <p>Support-Silver package</p>
+                    <p>GHS300.00</p>
+                </div>
+                <div>
+                    <p>Total Due</p>
+                    <p>GHS1,096.25</p>
+                </div>
+            
+               </div> 
+            </div>  
+               
+
     </main>
     <div id="footer">
         <div class="columns">
@@ -125,7 +129,6 @@
             </div>
         </div>
     </div>
-
     <div id="last">
         <section><a href="#">Privacy</a></section>
         <section>|</section>
@@ -139,3 +142,5 @@
     </div>
 </body>
 </html>
+
+

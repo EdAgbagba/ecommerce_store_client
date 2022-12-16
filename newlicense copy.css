@@ -103,6 +103,7 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+    
   }
 
   .smallcard{
@@ -158,7 +159,7 @@ button{
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
   color: #FFFFFF;
 }
@@ -175,6 +176,7 @@ a{
   line-height: 23px;
   color: #959595;
   text-decoration-line: none;
+  margin-top: 20px;
 }
 
 label{
@@ -302,11 +304,12 @@ label::after{
 }
 
 hr{
-  width: 743px;
+  width: 745px;
   height: 0px;
   left: 131px;
   top: 717px;
   border: 1px solid #EDEDED;
+    margin-left: -34px;
 }
 .form1{
   padding: 30px;
@@ -319,9 +322,13 @@ padding: 40px
 .view1{
   padding-left: 440px;
   margin-top: 45px;
+  display: inline-flex;
+  margin-left: -59px;
 }
-.view2{
-  padding-left:450px;
+.view2 {
+  padding-left: 400px;
+  display: flex;
+  padding-top: 30px;
 }
 .personaxlite, .silver,.due{
   display: flex;
@@ -380,6 +387,7 @@ border: 1px solid #EDEDED;
   left: 937px;
   top: 445.5px;
   border: 1px solid #EDEDED;
+  margin-left: 10px;
 }
 
 .due > p{

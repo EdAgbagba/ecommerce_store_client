@@ -132,9 +132,13 @@ body {
     padding-left: 440px;
     margin-top: 45px;
   }
-  .view2{
-    padding-left:450px;
-  }
+ 
+  .view2 {
+    padding-left: 410px;
+    padding-top: 27px;
+}
+
+ 
   .personaxlite, .silver, .due{
     display: flex;
     justify-content: space-between;
@@ -321,7 +325,7 @@ border-radius: 15px;
   width: 100%;
 }
 .view{
-  padding-left: 500px;
+  padding-left: 451px;
 }
 hr{
   width: 287px;

@@ -1,223 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="newlicense copy.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="newlicense copy.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"
+      integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js" integrity="sha512-+gShyB8GWoOiXNwOlBaYXdLTiZt10Iy6xjACGadpqMs20aJOoh+PJt3bwUVA6Cefe7yF7vblX6QwyXZiVwTWGg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        // Vanilla Javascript
-
-
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"
+      integrity="sha512-+gShyB8GWoOiXNwOlBaYXdLTiZt10Iy6xjACGadpqMs20aJOoh+PJt3bwUVA6Cefe7yF7vblX6QwyXZiVwTWGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+      // Vanilla Javascript
     </script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/css/intlTelInput.css" />
-     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/intlTelInput-jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/css/intlTelInput.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/intlTelInput-jquery.min.js"
+    ></script>
 
     <title>Company Info</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="header">
-        <div><img src="images/PersolLogo.svg" alt="persol logo"></div>
-        <div><a href="index.html">Overview</a></div>
-        <div><a href="#">Support</a></div>
-        <div class="dropdown" style="color: #185375;">
-            Products
-            <div class="dropdown-content">
-                <a href="sikasem.html">SIKASEM</a>
-                <a href="personax.html">PERSONAX</a>
-            </div>
+      <div><img src="images/PersolLogo.svg" alt="persol logo" /></div>
+      <div><a href="index.html">Overview</a></div>
+      <div><a href="#">Support</a></div>
+      <div class="dropdown" style="color: #185375">
+        Products
+        <div class="dropdown-content">
+          <a href="sikasem.html">SIKASEM</a>
+          <a href="personax.html">PERSONAX</a>
         </div>
-        <div><a href="#">Contact</a></div>
-        <div><a href="#">My Account</a></div>
-        <div><button onclick="location.href='index.html'">Logout</button></div>
+      </div>
+      <div><a href="#">Contact</a></div>
+      <div><a href="#">My Account</a></div>
+      <div><button onclick="location.href='index.html'">Logout</button></div>
     </div>
-  
+
     <main>
-        <div class="newlicense"><p>New License</p></div>
-        <div class="card">
-            <div class="bigcard">
-             <div class="prime" ><p>Company Info</p></div>
-             <form class="form1">
-                <div class="legalandemail">
-                    <label>Legal Name</label>
-                    <input type="text" name="Legal Name" id="legalname" required>
-                </div>
-                <div class="industry">
-                <div class="one">
-                    <label class="info">Country</label>   
-                      <select id="country" name="Country">
-                        <option value="Ghana">Ghana</option>
-                        <option value="Nigeria">Nigeria</option>
-                        <option value="Liberia">Liberia</option>
-                      </select>
-                      </div>
-                      <div class="two">
-                        <label class="info">Select Industry</label>
-                        <!-- <input type="text" name="Select Industry"> -->
-                        <select id="industry" name="industry">
-                            <option value="Select Industry Type" selected>Select Industry Type</option>
-                            <option value="advertising-media-communications">Advertising, Media &amp; Communications
-                            </option>
-                            <option value="agriculture-fishing-forestry">Agriculture, Fishing &amp; Forestry</option>
-                            <option value="automotive-aviation">Automotive &amp; Aviation</option>
-                            <option value="banking-finance-insurance">Banking, Finance &amp; Insurance</option>
-                            <option value="construction">Construction</option>
-                            <option value="education">Education</option>
-                            <option value="energy-utilities">Energy &amp; Utilities</option>
-                            <option value="enforcement-security">Enforcement &amp; Security</option>
-                            <option value="entertainment-events-sport">Entertainment, Events &amp; Sport</option>
-                            <option value="healthcare">Healthcare</option>
-                            <option value="hospitality-hotel">Hospitality &amp; Hotel</option>
-                            <option value="it-telecoms">IT &amp; Telecoms</option>
-                            <option value="law-compliance">Law &amp; Compliance</option>
-                            <option value="manufacturing-warehousing">Manufacturing &amp; Warehousing</option>
-                            <option value="mining-energy-metals">Mining, Energy &amp; Metals</option>
-                            <option value="ngo-npo-charity">NGO, NPO &amp; Charity</option>
-                            <option value="real-estate">Real Estate</option>
-                            <option value="recruitment">Recruitment</option>
-                            <option value="retail-fashion-fmcg">Retail, Fashion &amp; FMCG</option>
-                            <option value="shipping-logistics">Shipping &amp; Logistics</option>
+      <div class="newlicense"><p>New License</p></div>
+      <div class="card">
+        <div class="bigcard">
+          <div class="prime"><p>Company Info</p></div>
+          <form class="form1" action="./newlicenseprimary copy.html">
+            <div class="legalandemail">
+              <label>Legal Name</label>
+              <input type="text" name="Legal Name" id="legalname" required />
+            </div>
+            <div class="industry">
+              <div class="one">
+                <label for="country" class="info">Country</label>
+                <select id="country" name="Country" required>
+                  <option id="country" value="Ghana">Ghana</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Liberia">Liberia</option>
+                </select>
+              </div>
+              <div class="two">
+                <label class="info">Select Industry</label>
+                <!-- <input type="text" name="Select Industry"> -->
+                <select id="industry" name="industry" required>
+                  <option value="Select Industry Type" selected>
+                    Select Industry Type
+                  </option>
+                  <option value="advertising-media-communications">
+                    Advertising, Media &amp; Communications
+                  </option>
+                  <option value="agriculture-fishing-forestry">
+                    Agriculture, Fishing &amp; Forestry
+                  </option>
+                  <option value="automotive-aviation">
+                    Automotive &amp; Aviation
+                  </option>
+                  <option value="banking-finance-insurance">
+                    Banking, Finance &amp; Insurance
+                  </option>
+                  <option value="construction">Construction</option>
+                  <option value="education">Education</option>
+                  <option value="energy-utilities">
+                    Energy &amp; Utilities
+                  </option>
+                  <option value="enforcement-security">
+                    Enforcement &amp; Security
+                  </option>
+                  <option value="entertainment-events-sport">
+                    Entertainment, Events &amp; Sport
+                  </option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="hospitality-hotel">
+                    Hospitality &amp; Hotel
+                  </option>
+                  <option value="it-telecoms">IT &amp; Telecoms</option>
+                  <option value="law-compliance">Law &amp; Compliance</option>
+                  <option value="manufacturing-warehousing">
+                    Manufacturing &amp; Warehousing
+                  </option>
+                  <option value="mining-energy-metals">
+                    Mining, Energy &amp; Metals
+                  </option>
+                  <option value="ngo-npo-charity">
+                    NGO, NPO &amp; Charity
+                  </option>
+                  <option value="real-estate">Real Estate</option>
+                  <option value="recruitment">Recruitment</option>
+                  <option value="retail-fashion-fmcg">
+                    Retail, Fashion &amp; FMCG
+                  </option>
+                  <option value="shipping-logistics">
+                    Shipping &amp; Logistics
+                  </option>
+                </select>
+              </div>
+              <div class="one">
+                <label class="info">Main Phone</label>
 
-                        </select>
-                    </div>
-                    <div class="one">
-                        <label class="info">Main Phone</label>
-                
-                            <input type="tel" placeholder="Enter your phone number" name="main phone" id="mainPhone" autocomplete="off" style="padding-left: 95px;width: 311px;height: 50px;background: #FFFFFF;border: 1px solid #EDEDED;border-radius: 5px;" required>
-                    </div>
-                    <div class="two">
-                        <label class="info">Other Phone</label>
-                        <input type="tel" name="phone" id="otherPhone" placeholder="Enter your other phone number" autocomplete="off" style="padding-left: 95px;width: 323px;height: 50px;background: #FFFFFF;border: 1px solid #EDEDED;border-radius: 5px;" required>
-                        
-                    </div>
-                </div>
-                    <div class="legalandemail">
-                        <label>Email Name</label>
-                       
-                        <input type="email" name="Legal Name" id="businessname" required>
-                    </div>
+                <input
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  name="main phone"
+                  id="mainPhone"
+                  autocomplete="off"
+                  style="
+                    padding-left: 95px;
+                    width: 311px;
+                    height: 50px;
+                    background: #ffffff;
+                    border: 1px solid #ededed;
+                    border-radius: 5px;
+                  "
+                  required
+                />
+              </div>
+              <div class="two">
+                <label class="info">Other Phone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="otherPhone"
+                  placeholder="Enter your other phone number"
+                  autocomplete="off"
+                  style="
+                    padding-left: 95px;
+                    width: 323px;
+                    height: 50px;
+                    background: #ffffff;
+                    border: 1px solid #ededed;
+                    border-radius: 5px;
+                  "
+                  required
+                />
+              </div>
+            </div>
+            <div class="legalandemail">
+              <label>Email Name</label>
 
-                    </form>
-                    
-                 <hr>
-        <div class="view2">
-            <a href="./license_pricing.html">< Back</a>
-            <button id="details" onclick="viewDetails()"><a class="userInfo" href="./newlicenseprimary copy.html">Provide Admin User Info ></a></button>
-       </div>
-       </div>  
-       <div class="smallcard">
-        <div class="summary"><p>Order Summary</p></div>
-        <div class="order">
-        <div class="personaxlite">
-            <p>Personax Lite</p>
-            <p>GHS796.25</p>
+              <input
+                type="email"
+                name="Legal Name"
+                id="businessname"
+                required
+              />
+            </div>
+
+            <hr />
+            <div class="view2">
+              <a href="./license_pricing.html">< Back</a>
+              <button class="userInfo" id="details" type="submit" onclick="viewDetails()">
+                  Provide Admin User Info >
+                <!-- <a class="userInfo" href="./newlicenseprimary copy.html"
+                  >
+                  </a -->
+              </button>
+            </div>
+          </form>
+         
         </div>
-        <div class="silver">
-            <p>Support-Silver package</p>
-            <p>GHS300.00</p>
+        <div class="smallcard">
+          <div class="summary"><p>Order Summary</p></div>
+          <div class="order">
+            <div class="personaxlite">
+              <p>Personax Lite</p>
+              <p>GHS796.25</p>
+            </div>
+            <div class="silver">
+              <p>Support-Silver package</p>
+              <p>GHS300.00</p>
+            </div>
+            <hr class="orderline" />
+            <div class="due">
+              <p>Total Due</p>
+              <p>GHS1,096.25</p>
+            </div>
+          </div>
         </div>
-        <hr class="orderline">
-        <div class="due">
-            <p>Total Due</p>
-            <p>GHS1,096.25</p>
-        </div>
-    </div>
-    
-       </div> 
-        </div> 
+      </div>
     </main>
     <div id="footer">
-        <div class="columns">
-            <div><b>Learn About our Products</b></div>
-            <div><a href="#">What is Personax?</a></div>
-            <div><a href="#">What is Sikasem</a></div>
-            <div><a href="#">What's New</a></div>
-            <div><a href="#">Blogs</a></div>
-            <section>
-                <div><b>Language</b></div>
-                <div>English</div>
-                <div>Fran&ccedil;ais</div>
-            </section>
+      <div class="columns">
+        <div><b>Learn About our Products</b></div>
+        <div><a href="#">What is Personax?</a></div>
+        <div><a href="#">What is Sikasem</a></div>
+        <div><a href="#">What's New</a></div>
+        <div><a href="#">Blogs</a></div>
+        <section>
+          <div><b>Language</b></div>
+          <div>English</div>
+          <div>Fran&ccedil;ais</div>
+        </section>
+      </div>
+      <div class="columns">
+        <div><b>Help</b></div>
+        <div><a href="#">Contact Us</a></div>
+        <div><a href="#">Knowledge Center</a></div>
+        <div><a href="#">Persol Store Support Overview</a></div>
+      </div>
+      <div class="columns">
+        <div>
+          <button>Create a <b>PERSOL</b> Account</button>
         </div>
-        <div class="columns">
-            <div><b>Help</b></div>
-            <div><a href="#">Contact Us</a></div>
-            <div><a href="#">Knowledge Center</a></div>
-            <div><a href="#">Persol Store Support Overview</a></div>
+        <div style="padding: 30px">
+          <div style="background-color: white; width: 30px; height: 30px">
+            <a href="#"
+              ><img
+                src="images/twitter.svg"
+                alt="twitter"
+                width="14.52"
+                height="12"
+                style="padding-top: 10px"
+            /></a>
+          </div>
+          <a href="#"
+            ><img
+              src="images/facebook.svg"
+              alt="facebook"
+              width="30"
+              height="30"
+          /></a>
+          <a href="#"
+            ><img
+              src="images/linkedin.svg"
+              alt="linkedin"
+              width="30"
+              height="30"
+          /></a>
+          <a href="#"
+            ><img
+              src="images/instagram.svg"
+              alt="instagram"
+              width="30"
+              height="30"
+          /></a>
+          <a href="#"
+            ><img src="images/google.svg" alt="google" width="30" height="30"
+          /></a>
+          <a href="#"
+            ><img src="images/youtube.svg" alt="youtube" width="30" height="30"
+          /></a>
         </div>
-        <div class="columns">
-            <div><button>Create a <b>PERSOL</b> Account</button></div>
-            <div style="padding: 30px;">
-                <div style="background-color: white; width: 30px; height: 30px;"><a href="#"><img
-                            src="images/twitter.svg" alt="twitter" width="14.52" height="12"
-                            style="padding-top: 10px;"></a></div>
-                <a href="#"><img src="images/facebook.svg" alt="facebook" width="30" height="30"></a>
-                <a href="#"><img src="images/linkedin.svg" alt="linkedin" width="30" height="30"></a>
-                <a href="#"><img src="images/instagram.svg" alt="instagram" width="30" height="30"></a>
-                <a href="#"><img src="images/google.svg" alt="google" width="30" height="30"></a>
-                <a href="#"><img src="images/youtube.svg" alt="youtube" width="30" height="30"></a>
-            </div>
-        </div>
+      </div>
     </div>
 
     <div id="last">
-        <section><a href="#">Privacy</a></section>
-        <section>|</section>
-        <section><a href="#">Site Terms</a></section>
-        <section>|</section>
-        <section><a href="#">Cookie Preferences</a></section>
-        <section>|</section>
-        <section>
-            &copy; 2022, Persol Systems Limited. All rights reserved
-        </section>
+      <section><a href="#">Privacy</a></section>
+      <section>|</section>
+      <section><a href="#">Site Terms</a></section>
+      <section>|</section>
+      <section><a href="#">Cookie Preferences</a></section>
+      <section>|</section>
+      <section>
+        &copy; 2022, Persol Systems Limited. All rights reserved
+      </section>
     </div>
 
     <script type="text/javascript">
+      // var input = document.querySelector("#telephone");
+      // window.intlTelInput(input,({
+      // // options here
+      // }));
 
+      // // jQuery
 
-    // var input = document.querySelector("#telephone");
-    // window.intlTelInput(input,({
-    // // options here
-    // }));
-    
-    // // jQuery
+      // $("#telephone").intlTelInput({
 
-    // $("#telephone").intlTelInput({
+      // // options here
+      // });
 
-    // // options here
-    // });
-   
-
-        $(function () {
-            var code = "+233"; // Assigning value from model.
-            $('#mainPhone, #otherPhone').val(code);
-            $('#mainPhone, #otherPhone').intlTelInput({
-                autoHideDialCode: true,
-                autoPlaceholder: "ON",
-                dropdownContainer: document.body,
-                formatOnDisplay: true,
-                hiddenInput: "full_number",
-                initialCountry: "auto",
-                nationalMode: true,
-                placeholderNumberType: "MOBILE",
-                preferredCountries: ['US'],
-                separateDialCode: true
-            });
-            $('#btnSubmit').on('click', function () {
-                var code = $("#txtPhone").intlTelInput("getSelectedCountryData").dialCode;
-                var phoneNumber = $('#txtPhone').val();
-                var name = $("#txtPhone").intlTelInput("getSelectedCountryData").name;
-                alert('Country Code : ' + code + '\nPhone Number : ' + phoneNumber + '\nCountry Name : ' + name);
-            });
+      $(function () {
+        var code = "+233"; // Assigning value from model.
+        $("#mainPhone, #otherPhone").val(code);
+        $("#mainPhone, #otherPhone").intlTelInput({
+          autoHideDialCode: true,
+          autoPlaceholder: "ON",
+          dropdownContainer: document.body,
+          formatOnDisplay: true,
+          hiddenInput: "full_number",
+          initialCountry: "auto",
+          nationalMode: true,
+          placeholderNumberType: "MOBILE",
+          preferredCountries: ["US"],
+          separateDialCode: true,
         });
+        $("#btnSubmit").on("click", function () {
+          var code = $("#txtPhone").intlTelInput(
+            "getSelectedCountryData"
+          ).dialCode;
+          var phoneNumber = $("#txtPhone").val();
+          var name = $("#txtPhone").intlTelInput("getSelectedCountryData").name;
+          alert(
+            "Country Code : " +
+              code +
+              "\nPhone Number : " +
+              phoneNumber +
+              "\nCountry Name : " +
+              name
+          );
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
