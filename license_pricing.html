@@ -82,7 +82,7 @@
             </div>
             <div id="employee-num">
                 <input type="text" class="num-inputs" id="num-employee" name="num-employee"
-                    onkeypress="return isNumber(event)" required />
+                    onkeypress="return isNumber(event)"  required />
             </div>
             <div id="label5">Select Payment Cycle *</div>
             <div id="label6">Select support package *</div>
@@ -252,14 +252,15 @@
                 //alert("checked");
                 filledLicenseForm.payroll = document.getElementsByName("application")[0].checked
                 filledLicenseForm.hr = document.getElementsByName("application")[1].checked
-                location.replace("./newlicensecompany.html")
+                
             } else {
                 //document.getElementById("app-to-buy").style.border = "solid 1px black"
                 alert("Please Select At Least One Application");
             }
             localStorage.setItem("filledLicenseForm", JSON.stringify(filledLicenseForm))
             console.log(JSON.parse(localStorage.getItem("filledLicenseForm")))
-            console.log(parseInt("10.oo"))
+            
+            window.location.replace("./newlicensecompany.html")
             
         }
 
