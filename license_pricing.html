@@ -45,7 +45,7 @@
         <div id="bar">
             <div>New License</div>
         </div>
-        <form id="main-form">
+        <form id="main-form" action="./newlicensecompany copy.html">
             <section id="main-form-bar">
                 <div>License & Pricing</div>
             </section>
@@ -99,7 +99,7 @@
                     <option value="Gold">Gold</option>
                 </select></div>
             <div id="submit">
-                <div><button onclick=formDetails()>Provide Company info ></button></div> <!--type="submit" -->
+                <div><button onclick="formDetails()">Provide Company info ></button></div> <!--type="submit" -->
             </div>
         </form>
         <div id="summary">
@@ -236,6 +236,18 @@
             //     lite.removeAttribute("id", id)
             // }
         }
+        function add() {
+            document.getElementById("personax-support-package").innerHTML = "Support Package - " + document.getElementById("supp").value
+            if (document.getElementById("supp").value === "Bronze") {
+                document.getElementById("personax-support-price").innerHTML = "GH&#8373;" + bronzePrice;
+            } else if (document.getElementById("supp").value === "Silver") {
+                document.getElementById("personax-support-price").innerHTML = "GH&#8373;" + silverPrice;
+            } else if (document.getElementById("supp").value === "Gold") {
+                document.getElementById("personax-support-price").innerHTML = "GH&#8373;" + goldPrice;
+            } else document.getElementById("personax-support-price").innerHTML = "GH&#8373;0.00"
+
+            calc()
+        }
         formDetails = function () {
             let filledLicenseForm = {
                 type: document.getElementById("selected-type").className.slice(0, 1).toUpperCase() + document.getElementById("selected-type").className.slice(1),
@@ -254,28 +266,19 @@
             } else {
                 filledLicenseForm.payroll = document.getElementsByName("application")[0].checked
                 filledLicenseForm.hr = document.getElementsByName("application")[1].checked
-                window.location.replace("./newlicensecompany.html")
+                localStorage.setItem("filledLicenseForm", JSON.stringify(filledLicenseForm))
+                //location.href='order_page.html'
+                location.replace("./order_page.html")
+                //console.log(JSON.parse(localStorage.getItem("filledLicenseForm")))
             }
-            localStorage.setItem("filledLicenseForm", JSON.stringify(filledLicenseForm))
-            console.log(JSON.parse(localStorage.getItem("filledLicenseForm")))
+
 
 
 
         }
 
         //let intervalId = setInterval(function () {}, 50);
-        function add() {
-            document.getElementById("personax-support-package").innerHTML = "Support Package - " + document.getElementById("supp").value
-            if (document.getElementById("supp").value === "Bronze") {
-                document.getElementById("personax-support-price").innerHTML = "GH&#8373;" + bronzePrice;
-            } else if (document.getElementById("supp").value === "Silver") {
-                document.getElementById("personax-support-price").innerHTML = "GH&#8373;" + silverPrice;
-            } else if (document.getElementById("supp").value === "Gold") {
-                document.getElementById("personax-support-price").innerHTML = "GH&#8373;" + goldPrice;
-            } else document.getElementById("personax-support-price").innerHTML = "GH&#8373;0.00"
-
-            calc()
-        }
+        
     </script>
 </body>
 
