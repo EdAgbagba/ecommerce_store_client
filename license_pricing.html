@@ -45,7 +45,7 @@
         <div id="bar">
             <div>New License</div>
         </div>
-        <form id="main-form">
+        <form id="main-form" action="./newlicensecompany copy.html">
             <section id="main-form-bar">
                 <div>License & Pricing</div>
             </section>
@@ -82,7 +82,7 @@
             </div>
             <div id="employee-num">
                 <input type="text" class="num-inputs" id="num-employee" name="num-employee"
-                    onkeypress="return isNumber(event)"  required />
+                    onkeypress="return isNumber(event)" required />
             </div>
             <div id="label5">Select Payment Cycle *</div>
             <div id="label6">Select support package *</div>
@@ -99,7 +99,7 @@
                     <option value="Gold">Gold</option>
                 </select></div>
             <div id="submit">
-                <div><button onclick=formDetails()>Provide Company info ></button></div> <!--type="submit" -->
+                <div><button onclick="formDetails()">Provide Company info ></button></div> <!--type="submit" -->
             </div>
         </form>
         <div id="summary">
@@ -122,8 +122,8 @@
         <div id="footer">
             <div class="columns">
                 <div><b>Learn About our Products</b></div>
-                <div><a href="#p">What is Personax?</a></div>
-                <div><a href="#s">What is Sikasem</a></div>
+                <div><a href="index.html">What is Personax?</a></div>
+                <div><a href="index.html">What is Sikasem</a></div>
                 <div><a href="">What's New</a></div>
                 <div><a href="">Blogs</a></div>
                 <section>
@@ -143,7 +143,7 @@
                 <div><button onclick="location.href='newaccount.html'">Create a <b>PERSOL</b> Account</button></div>
                 <div style="padding: 30px;">
                     <div style="background-color: white; width: 30px; height: 30px;"><a href="#"><img
-                                src="images/twitter.svg" alt="twitter" width="14.52" height="12"
+                                src="images/twitter.svg" alt="twitter" width="15px" height="22px"
                                 style="padding-top: 10px;"></a></div>
                     <a href="#"><img src="images/facebook.svg" alt="facebook" width="30" height="30"></a>
                     <a href="#"><img src="images/linkedin.svg" alt="linkedin" width="30" height="30"></a>
@@ -180,13 +180,13 @@
             let cycle = document.getElementById("cycle").value
 
             if (cycle === "quarterly") {
-                 document.getElementById("total-cost").innerHTML = "GH&#8373;" +  (calc1 * 3).toString()+ ".00"
+                document.getElementById("total-cost").innerHTML = "GH&#8373;" + (calc1 * 3).toString() + ".00"
 
             } else if (cycle === "half year") {
-                 document.getElementById("total-cost").innerHTML = "GH&#8373;" +  (calc1 * 6).toString()+ ".00"
+                document.getElementById("total-cost").innerHTML = "GH&#8373;" + (calc1 * 6).toString() + ".00"
             } else if (cycle === "annually") {
-                 document.getElementById("total-cost").innerHTML = "GH&#8373;" +  (calc1 * 12).toString()+ ".00"
-            } else  document.getElementById("total-cost").innerHTML = "GH&#8373;" +  (calc1).toString()+ ".00"
+                document.getElementById("total-cost").innerHTML = "GH&#8373;" + (calc1 * 12).toString() + ".00"
+            } else document.getElementById("total-cost").innerHTML = "GH&#8373;" + (calc1).toString() + ".00"
         }
         window.addEventListener("DOMContentLoaded", function (e) {
             let mychoice = localStorage.getItem("mychoice")
@@ -217,7 +217,7 @@
                 ent.removeAttribute("id", id)
                 document.getElementById("personax-type").innerHTML = "Personax Lite"
                 document.getElementById("personax-price").innerHTML = "GH&#8373;" + litePrice
-                localStorage.setItem("mychoice1","Lite")
+                localStorage.setItem("mychoice1", "Lite")
 
                 calc()
             }
@@ -227,7 +227,7 @@
                 ent.removeAttribute("id", id)
                 document.getElementById("personax-type").innerHTML = "Personax Standard"
                 document.getElementById("personax-price").innerHTML = "GH&#8373;" + standardPrice
-                localStorage.setItem("mychoice1","Standard")
+                localStorage.setItem("mychoice1", "Standard")
                 calc()
             }
             // else if (sel === "enterprise") {
@@ -236,35 +236,6 @@
             //     lite.removeAttribute("id", id)
             // }
         }
-        formDetails = function () {
-            let filledLicenseForm = {
-                type: document.getElementById("selected-type").className.slice(0,1).toUpperCase() + document.getElementById("selected-type").className.slice(1),
-                payroll: false,
-                hr: false,
-                userNumber: document.getElementById("num-user").value,
-                employeeNumber: document.getElementById("num-employee").value,
-                cycle: document.getElementById("cycle").value.slice(0,1).toUpperCase() + document.getElementById("cycle").value.slice(1) ,
-                support: document.getElementById("supp").value,
-                totalAmountDue: document.getElementById("total-cost").innerHTML
-                
-            }
-            if (document.getElementsByName("application")[0].checked || document.getElementsByName("application")[1].checked) {
-                //alert("checked");
-                filledLicenseForm.payroll = document.getElementsByName("application")[0].checked
-                filledLicenseForm.hr = document.getElementsByName("application")[1].checked
-                
-            } else {
-                //document.getElementById("app-to-buy").style.border = "solid 1px black"
-                alert("Please Select At Least One Application");
-            }
-            localStorage.setItem("filledLicenseForm", JSON.stringify(filledLicenseForm))
-            console.log(JSON.parse(localStorage.getItem("filledLicenseForm")))
-            
-            window.location.replace("./newlicensecompany copy.html")
-            
-        }
-
-        //let intervalId = setInterval(function () {}, 50);
         function add() {
             document.getElementById("personax-support-package").innerHTML = "Support Package - " + document.getElementById("supp").value
             if (document.getElementById("supp").value === "Bronze") {
@@ -277,6 +248,37 @@
 
             calc()
         }
+        formDetails = function () {
+            let filledLicenseForm = {
+                type: document.getElementById("selected-type").className.slice(0, 1).toUpperCase() + document.getElementById("selected-type").className.slice(1),
+                payroll: false,
+                hr: false,
+                userNumber: document.getElementById("num-user").value,
+                employeeNumber: document.getElementById("num-employee").value,
+                cycle: document.getElementById("cycle").value.slice(0, 1).toUpperCase() + document.getElementById("cycle").value.slice(1),
+                support: document.getElementById("supp").value,
+                totalAmountDue: document.getElementById("total-cost").innerHTML
+
+            }
+            if (!document.getElementsByName("application")[0].checked && !document.getElementsByName("application")[1].checked) {
+                alert("Please Select At Least One Application");
+
+            } else {
+                filledLicenseForm.payroll = document.getElementsByName("application")[0].checked
+                filledLicenseForm.hr = document.getElementsByName("application")[1].checked
+                localStorage.setItem("filledLicenseForm", JSON.stringify(filledLicenseForm))
+                //location.href='order_page.html'
+                location.replace("./order_page.html")
+                //console.log(JSON.parse(localStorage.getItem("filledLicenseForm")))
+            }
+
+
+
+
+        }
+
+        //let intervalId = setInterval(function () {}, 50);
+        
     </script>
 </body>
 

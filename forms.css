@@ -121,7 +121,8 @@
 
   cursor: pointer;
 }
-#license-type > div > div:hover {
+.lite-type:hover,
+.standard-type:hover {
   color: rgba(56, 160, 255, 0.5);
 }
 .lite-type {
@@ -155,6 +156,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   color: #000;
+}
+#selected-type:hover {
+  color: #000 !important;
 }
 #app-to-buy {
   position: absolute;
@@ -593,9 +597,9 @@ img[alt="ghana"] {
 #order-body {
   box-sizing: border-box;
   position: absolute;
-  width: 1348px;
+  right: 7.57%;
   height: 788px;
-  left: 7.578%;
+  left: 7.57%;
   top: 139px;
   border: 1px solid rgba(193, 193, 193, 0.4);
   border-radius: 10px;
@@ -642,7 +646,6 @@ img[alt="ghana"] {
 }
 .right-side {
   left: 442px;
-  
 }
 #heading {
   margin-top: 0px !important;
