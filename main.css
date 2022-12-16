@@ -2,6 +2,7 @@ body {
   font-family: "Work Sans", sans-serif;
   position: relative;
   width: 100%;
+  /* min-width: 1000px; */
   background: #FFFCFA;
   color: black;
   margin: 0px;
@@ -10,19 +11,20 @@ body {
 /*HEADER STYLES*/
 #header {
   width: 100%;
-  height: 100px;
+  height: 118px;
 }
 #mainbody {
   width: 100%;
   height: 100%;
 }
 #header > div {
+  position: absolute;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
   line-height: 19px;
   height: 19px;
-  position: absolute;
+  
 }
 #header > div > a {
   text-decoration: none;
