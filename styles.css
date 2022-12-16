@@ -3,9 +3,7 @@ body{
     height: 100%;
    
 }
-*{
-    box-sizing: border-box;
-}
+
 
 #login {
     display: grid;

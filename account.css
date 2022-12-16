@@ -18,6 +18,7 @@
 body {
   width: 100%;
   height: 100%;
+  font-family: "Work Sans", sans-serif;
 }
 
 
@@ -44,7 +45,6 @@ input[type="text"],
   /* margin: 15px 0px; */
   border: 1px solid #c5c5c5;
   border-radius: 10px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -61,7 +61,6 @@ input[type="password"] {
   /* margin: 15px 0px; */
   border: 1px solid #c5c5c5;
   border-radius: 10px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -99,12 +98,11 @@ input[type="password"] {
 
 .middle > h1 {
   text-align: center;
-  margin-left: 20px;
+  margin-left: -28px;
   margin-bottom: 40px;
 }
 
-label {
-  font-family: "Inter";
+label{
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -137,7 +135,6 @@ label {
 }
 
 .conditions {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -146,7 +143,6 @@ label {
 }
 
 span {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -155,7 +151,6 @@ span {
 }
 
 .already {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -170,7 +165,6 @@ button {
   top: 0px;
   background: #000000;
   border-radius: 10px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -187,7 +181,6 @@ i {
   max-width: 200px;
 }
 h1 {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -221,7 +214,7 @@ a {
   margin-bottom: 20px;
   border: 1px solid #C5C5C5;
   border-radius: 10px;
-  /* color: black; */
+
 }
 
 .log{
@@ -232,7 +225,6 @@ a {
   border: none;
   margin-bottom: 20px;
   border-radius: 10px;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
   font-size: 16px;

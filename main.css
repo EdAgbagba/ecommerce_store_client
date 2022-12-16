@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: "Work Sans", sans-serif;
   position: relative;
@@ -6,6 +9,7 @@ body {
   background: #FFFCFA;
   color: black;
   margin: 0px;
+  padding: 0px;
 }
 
 /*HEADER STYLES*/

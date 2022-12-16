@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="newlicense.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="products copy.css">
     <link rel="stylesheet" href="main.css">
-    <title>Company Info</title>
+    <title>Product Page</title>
 </head>
+
 <body>
     <div id="header">
-        <div><img src="images/PersolLogo.svg" alt="persol logo"></div>
-        <div><a href="index.html">Overview</a></div>
-        <div><a href="#">Support</a></div>
-        <div class="dropdown" style="color: #185375;">
-            Products
+        <div>
+            <img src="images/PersolLogo.svg" alt="persol logo">
+        </div>
+        <div>
+            <a href="index.html">Overview</a>
+        </div>
+        <div>
+            <a href="support.html">Support</a>
+        </div>
+        <div class="dropdown">
+            <div style="display: flex;">
+                <section style="margin-right: 5px;">Products</section>
+                <section style="padding: 3px 0 0 2px;
+                transform: rotate(90deg); font-size: 15px;">></section>
+            </div>
             <div class="dropdown-content">
                 <a href="sikasem.html">SIKASEM</a>
-                <a href="personax.html">PERSONAX</a>
+                <a color: white" href="personax.html">PERSONAX</a>
             </div>
         </div>
-        <div><a href="#">Contact</a></div>
-        <div><a href="#">My Account</a></div>
-        <div><button onclick="location.href='index.html'">Logout</button></div>
+        <div><a href="contact.html">Contact</a></div>
+        <div><a href="myaccount.html">My Account</a></div>
+        <div><button onclick="location.href='login.html'">Log out</button></div>
     </div>
-  
     <main>
-        <div>
-            <h2 class="new">New License</h2>
-        </div>
         <div class="card">
+
+            <div class="bigcard">
             <div id="formorder">
-                
-                <h2>Company Info</h2>
+                <img id="sikasem_logo" class="toBuy" src="" alt="">
+                <div><p class="orderForm">Order form</p></div>
             </div>
             <div class="form">
                 <div class="legalandemail">
-                    <label>Legal Name</label>
-                    <input type="text" name="Legal Name" id="legalname" >
+                    <label>Business Name</label>
+                    <input type="text" name="Business Name" id="businessname" >
                 </div>
                 <div class="industry">
-                <div class="one">
-                    <label class="info">Country</label>
-                    <!-- <input type="text" name="Select Payment Cycle">  -->
-                    <select id="Month" name="Month">
-                        <option value="Monthly" selected>Monthly</option>
-                        <option value="Quarterly">Quarterly</option>
-                        <option value="Half-Yearly">Half-Yearly</option>
-                        <option value="Anually">Anually</option>
-                    </select>
-                </div>
-                
                     <div class="one">
                         <label class="info">Select Industry</label>
                         <!-- <input type="text" name="Select Industry"> -->
@@ -80,54 +82,51 @@
 
                         </select>
                     </div>
-
                     <div class="two">
-                        <label class="info">Main Phone</label>
-                        <input type="tel" placeholder="Enter your phone number" name="main phone" id="mainphone">
-                    </div>
-                    <div class="two">
-                        <label class="info">Other Phone</label>
-                        <input type="tel"  name="Email" id="Email" placeholder="Enter your other phone number">
-                    </div>
+                        <label class="info">Select Payment Cycle</label>
+                        <select id="Month" name="Month">
+                            <option value="Monthly" selected>Monthly</option>
+                            <option value="Quarterly">Quarterly</option>
+                            <option value="Half-Yearly">Half-Yearly</option>
+                            <option value="Anually">Anually</option>
+                        </select>
                     </div>
 
-                        <div class="legalandemail">
-                            <label>Email Name</label>
-                            <input type="email" name="Legal Name" id="businessname" >
-                        </div>
+                    <div class="one">
+                        <label class="info">Username</label>
+                        <input type="text" name="Username" id="username" required>
+                    </div>
+                    <div class="two">
+                        <label class="info">Email</label>
+                        <input type="email" name="Email" id="Email" required>
+                    </div>
                 </div>
-            
-            <div class="view">
-               <a href="./pricing.html"> Back</a>
-                <button id="details" onclick="viewDetails()">Provide Admin User Dretails ></button></div>
+            </div>
+            <div class="view"><button id="details" onclick="viewDetails()">View Full Order Details</button></div>
         </div>
-       
-        <div id="tableorder">
+        <div id="smallcard">
 
-            <h2 class="summaryorder">Order Summary</h2>
-        </div>
-        <div class="smalltable">
-            <ul class="orderitems">
-                <li>
-                    <p>Personax Lite</p>
-                    <p id="money"  class="price">GHS796.25</p>
-
-                </li>
-            
-                    <li>
-                        <p>Support - Silver package</p>
-                        <p id="money"  class="price">GHS300.00</p>
-    
-                    </li>
-            
-
-            </ul>
-            <hr>
-            <div id="ordertotal">
-                <p class="due">Total Due</p>
-                <p id="money1" class="price">GHS1,096.25</p>
+            <div class="summaryorder"><p>Order Summary</p></div>
+            <div class="order">
+                <div class="personaxlite">
+                    <p class="sikasem"></p>
+                    <p>GHS199</p>
+                </div>
+                <hr>
+                <div class="due">
+                    <p>Total Due</p>
+                    <p class="money">GHS199</p>
+                </div>
+            </div>
             </div>
         </div>
-    </main>
+    </main> 
+    
+    <script src="./products.js"></script>
+    <script src="utils.js"></script>
 </body>
+
 </html>
+
+
+
