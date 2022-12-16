@@ -1,0 +1,372 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #FFFCFA;
+  color: black;
+  margin: 0px;
+}
+
+/*HEADER STYLES*/
+#header {
+  width: 100%;
+  height: 100px;
+}
+#mainbody {
+  width: 100%;
+  height: 100%;
+}
+#header > div {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 19px;
+  height: 19px;
+  position: absolute;
+}
+#header > div > a {
+  text-decoration: none;
+  color: black;
+}
+#header > div:nth-of-type(1) {
+  position: absolute;
+  width: 156px;
+  height: 51px;
+  left: 13.665%;
+  top: 34px;
+}
+#header > div:nth-of-type(2) {
+  width: 92px;
+  left: 32.245%;
+  top: 50px;
+}
+#header > div:nth-of-type(3) {
+  width: 81px;
+  left: 39.854%;
+  top: 50px;
+}
+#header > div:nth-of-type(4) {
+  width: 108px;
+  left: 46.956%;
+  top: 50px;
+  cursor: pointer;
+}
+#header > div:nth-of-type(5) {
+  width: 81px;
+  left: 55.398%;
+  top: 50px;
+}
+#header > div:nth-of-type(6) {
+  width: 119px;
+  left: 62.68%;
+  top: 50px;
+}
+#header > div:nth-of-type(7) {
+  position: absolute;
+  height: 56px;
+  left: 76.443%;
+  top: 31px;
+  background: #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 156px;
+}
+#header > div:nth-of-type(7) > button {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 246, 239, 0.5);
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  border-top: solid 3px #185375;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
+  #sikasem_logo {
+    width: 112px;
+    height: 23px;
+    margin: auto 23px auto 24px;
+  }
+  .form1{
+    padding: 30px;
+  }
+  
+  
+  .form2{
+  padding: 40px
+  }
+  .view1{
+    padding-left: 440px;
+    margin-top: 45px;
+  }
+  .view2{
+    padding-left:450px;
+  }
+  .personaxlite, .silver, .due{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #525252;
+    margin: 10px 20px 0px 20px
+  }
+  
+  #formorder{
+    width: 742px;
+    height: 72px;
+    left: 165px;
+    top: 225px;
+    background: #ABABAB;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+  }
+  #formorder > p{
+    width: 118px;
+    height: 23px;
+    left: 312px;
+    top: 250px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+
+  
+  }
+  
+  .summaryorder{
+    width: 327px;
+    height: 72px;
+    left: 948px;
+    top: 225px;
+    background: #ABABAB;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: -19px;
+   
+  }
+
+  .summaryorder > p{
+    width: 162px;
+  height: 23px;
+  left: 967px;
+  top: 249px;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-left: 20px;
+  padding-top: 30px;
+  }
+  #smallcard{
+    width: 327px;
+  height: 216px;
+  left: 948px;
+  top: 225px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  }
+  
+  .form{
+    margin: 40px;
+  }
+  
+  #month{
+    width: 323px;
+  height: 50px;
+  left: 536px;
+  top: 476px;
+  
+  background: #FFFFFF;
+  border: 1px solid #C5C5C5;
+  border-radius: 5px;
+  }
+
+
+  .card{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 280px 0px 270px
+  }
+  
+button{
+  width: 224px;
+  height: 61px;
+  left: 602px;
+  top: 743px;
+  background: #000000;
+  border-radius: 10px;
+}
+
+#details{
+  width: 198px;
+  height: 61px;
+  left: 615px;
+  top: 763px;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+label{
+  width: 94px;
+  height: 19px;
+  left: 176px;
+  top: 383px;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+.bigcard{
+
+  width: 742px;
+height: 574px;
+left: 165px;
+top: 225px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+}
+
+
+.smallcard{
+  width: 395px;
+height: 282px;
+left: 915px;
+top: 239px;
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+}
+.one > input , .one > select{
+  width: 311px;
+  height: 50px;
+  left: 178px;
+  top: 412px;
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.two > input ,.two > select {
+  width: 323px;
+  height: 50px;
+  left: 503px;
+  top: 412px;
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+.legalandemail> input[type="text"]{
+  width: 663px;
+  height: 51px;
+  left: 176px;
+  top: 373px;
+  border: 1px solid #EDEDED;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  
+}
+
+.industry{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+.view{
+  padding-left: 500px;
+}
+hr{
+  width: 287px;
+  height: 0px;
+  left: 967px;
+  top: 366px;
+  border: 1px solid #ABABAB;
+  transform: rotate(0.01deg);
+}
+
+.due > p{
+  width: 135px;
+  height: 26px;
+  left: 1154px;
+  top: 470px;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.money{
+  margin-left: 70px;
+}
+
+.sikasem{
+  width: 85px;
+height: 20px;
+left: 967px;
+top: 320px;
+background:url(./images/Sikasem\ Logo\ 2.png)
+}
+
+.orderForm{
+  margin-top: 26px;
+  width: 118px;
+  height: 23px;
+  left: 312px;
+  top: 250px;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-left: -18px;
+}
