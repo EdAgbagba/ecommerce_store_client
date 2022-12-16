@@ -46,9 +46,7 @@ let selectedProduct = function(name) {
   localStorage.setItem("mychoice",(mychoice));
 }
 personaxSelected = function(){
-  localStorage.setItem("toBuy","PersonaxLogo.svg");
-  location.replace("./products copy.html")
-  localStorage.setItem("price","GH&#8373;199")
+  location.replace("./license_pricing.html")
 }
 sikasemSelected = function(){
   localStorage.setItem("toBuy","SikasemLogo.svg");
