@@ -246,19 +246,21 @@
                 cycle: document.getElementById("cycle").value.slice(0,1).toUpperCase() + document.getElementById("cycle").value.slice(1) ,
                 support: document.getElementById("supp").value,
                 totalAmountDue: document.getElementById("total-cost").innerHTML
-
+                
             }
             if (document.getElementsByName("application")[0].checked || document.getElementsByName("application")[1].checked) {
                 //alert("checked");
                 filledLicenseForm.payroll = document.getElementsByName("application")[0].checked
                 filledLicenseForm.hr = document.getElementsByName("application")[1].checked
+                location.replace("./newlicensecompany.html")
             } else {
-                document.getElementById("app-to-buy").style.border = "solid 1px black"
+                //document.getElementById("app-to-buy").style.border = "solid 1px black"
                 alert("Please Select At Least One Application");
             }
             localStorage.setItem("filledLicenseForm", JSON.stringify(filledLicenseForm))
             console.log(JSON.parse(localStorage.getItem("filledLicenseForm")))
             console.log(parseInt("10.oo"))
+            
         }
 
         //let intervalId = setInterval(function () {}, 50);

@@ -59,7 +59,10 @@
                 </section>
                 <section id="app">
                     <div class="left-side">Application bought</div>
-                    <div class="right-side" id="app-bought">1. Payroll</div>
+                    <div class="right-side" id="app-bought" style="display: flex;">
+                        <div id="payroll" style="margin-right: 15px;"><b>•</b> Payroll</div>
+                        <div id="hr"><b>•</b> Hr</div>
+                    </div>
                 </section>
                 <section id="support">
                     <div class="left-side">Support Package bought</div>
@@ -149,8 +152,13 @@
         let filledLicenseForm = JSON.parse(localStorage.getItem("filledLicenseForm"))
         console.log(JSON.parse(localStorage.getItem("filledLicenseForm")))
         document.getElementById("type").innerHTML = localStorage.getItem("mychoice1")
-        // document.getElementById("").innerHTML = filledLicenseForm.hr
-        // document.getElementById("").innerHTML = filledLicenseForm.payroll
+        if(!filledLicenseForm.payroll){
+            document.getElementById("payroll").style.display = "none"
+        }
+        if(!filledLicenseForm.hr){
+            document.getElementById("hr").style.display = "none"
+        }
+         
         document.getElementById("support-package").innerHTML = filledLicenseForm.support
         document.getElementById("userNumber").innerHTML = filledLicenseForm.userNumber
         document.getElementById("employeeNumber").innerHTML = filledLicenseForm.employeeNumber
